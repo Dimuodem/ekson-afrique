@@ -1,0 +1,1365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us – Ekson Afrique</title>
+    <meta name="description" content="Learn about Ekson Afrique Ltd, our mission, vision, and commitment to engineering excellence in Kenya." />
+    <meta property="og:title" content="About Us – Ekson Afrique" />
+    <meta property="og:description" content="Engineering excellence, mission, vision, and core values of Ekson Afrique." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚙️</text></svg>" />
+    
+    <!-- ===== GOOGLE FONTS ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet" />
+    
+    <!-- ===== FONT AWESOME ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+      <link rel="stylesheet" href="../css/style.css" />
+      <link rel="stylesheet" href="../css/privacy.css" />
+
+    <!-- ===== EMBEDDED CSS ===== -->
+    <style>
+        /* ============================================
+           Ekson Afrique - About Page Styles
+           ============================================ */
+
+        /* ---------- Reset & Base ---------- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #F8FAFC;
+            color: #1E293B;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+            transition: background 0.3s, color 0.3s;
+        }
+        body.dark {
+            background: #0f172a;
+            color: #e2e8f0;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ---------- Cards ---------- */
+        .card {
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 12px 30px -8px rgba(0, 0, 0, 0.08);
+            transition: transform 0.2s, box-shadow 0.2s, background 0.3s, color 0.3s;
+            padding: 1.5rem;
+        }
+        body.dark .card {
+            background: #1e293b;
+            box-shadow: 0 12px 30px -8px rgba(0, 0, 0, 0.4);
+        }
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 24px 40px -12px rgba(0, 166, 81, 0.15);
+        }
+        body.dark .card:hover {
+            box-shadow: 0 24px 40px -12px rgba(0, 166, 81, 0.3);
+        }
+
+        /* ---------- Buttons ---------- */
+        .btn {
+            display: inline-block;
+            background: #00A651;
+            color: white;
+            padding: 14px 32px;
+            border-radius: 60px;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+            transition: all 0.25s;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            box-shadow: 0 4px 12px rgba(0, 166, 81, 0.25);
+        }
+        .btn:hover {
+            background: #006C3B;
+            transform: scale(1.02);
+            box-shadow: 0 8px 24px rgba(0, 166, 81, 0.35);
+        }
+        .btn-outline {
+            background: transparent;
+            border: 1.5px solid #00A651;
+            color: #00A651;
+            box-shadow: none;
+        }
+        .btn-outline:hover {
+            background: #00A651;
+            color: white;
+        }
+
+        /* ---------- Typography ---------- */
+        h1, h2, h3, h4 {
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #00A651, #006C3B);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .section-title {
+            font-size: clamp(2.2rem, 5vw, 3.4rem);
+            margin-bottom: 1rem;
+        }
+
+        /* ---------- Navigation ---------- */
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+            padding: 12px 0;
+            transition: background 0.3s, border-color 0.3s;
+        }
+        body.dark .navbar {
+            background: rgba(15, 23, 42, 0.85);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .nav-flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #006C3B;
+            transition: color 0.3s;
+        }
+        body.dark .logo {
+            color: #00A651;
+        }
+        .logo svg {
+            flex-shrink: 0;
+        }
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.2;
+        }
+        .logo-text .brand {
+            font-size: 1.4rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            color: #006C3B;
+        }
+        body.dark .logo-text .brand {
+            color: #00A651;
+        }
+        .logo-text .tagline {
+            font-size: 0.7rem;
+            font-weight: 600;
+            color: #00A651;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+        body.dark .logo-text .tagline {
+            color: #74C043;
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            font-weight: 500;
+        }
+        .nav-links a {
+            transition: color 0.2s;
+            font-size: 0.95rem;
+        }
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #00A651;
+        }
+        .hamburger {
+            display: none;
+            font-size: 1.8rem;
+            cursor: pointer;
+            color: #1E293B;
+        }
+        body.dark .hamburger {
+            color: #e2e8f0;
+        }
+        .dark-toggle {
+            background: none;
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+            color: #1E293B;
+            transition: color 0.3s;
+        }
+        body.dark .dark-toggle {
+            color: #e2e8f0;
+        }
+
+        /* ---------- About Grid ---------- */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            padding: 4rem 0;
+        }
+
+        /* ---------- Stats / Animated Counters ---------- */
+        .stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-top: 2rem;
+            opacity: 0.6;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        .stats.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .stat-item {
+            background: white;
+            padding: 1.2rem;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+            transition: background 0.3s, color 0.3s, opacity 0.5s ease, transform 0.5s ease;
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        body.dark .stat-item {
+            background: #1e293b;
+        }
+        .stat-item.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .stat-item:hover {
+            transform: translateY(-4px) !important;
+            box-shadow: 0 8px 25px rgba(0, 166, 81, 0.15);
+        }
+        body.dark .stat-item:hover {
+            box-shadow: 0 8px 25px rgba(0, 166, 81, 0.3);
+        }
+        .stat-number {
+            font-size: 2.4rem;
+            font-weight: 800;
+            color: #00A651;
+            display: inline-block;
+            min-width: 60px;
+            transition: color 0.3s;
+        }
+        body.dark .stat-number {
+            color: #74C043;
+        }
+        .stat-number.counting {
+            animation: pulse 0.5s ease infinite alternate;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.05); }
+        }
+
+        /* ---------- CTA ---------- */
+        .cta-section {
+            background: linear-gradient(145deg, #006C3B, #00A651);
+            border-radius: 48px;
+            padding: 4rem 3rem;
+            color: white;
+            margin: 4rem 0;
+            text-align: center;
+        }
+
+        /* ---------- Footer ---------- */
+        .footer {
+            background: #0b1a14;
+            color: #cbd5e1;
+            padding: 3rem 0 1.5rem;
+            margin-top: 3rem;
+            transition: background 0.3s;
+        }
+        body.dark .footer {
+            background: #0a0f1a;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 2rem;
+        }
+        .footer a {
+            color: #94a3b8;
+            transition: 0.2s;
+        }
+        .footer a:hover {
+            color: #00A651;
+        }
+        .social-icons a {
+            display: inline-block;
+            margin-right: 1rem;
+            font-size: 1.5rem;
+            color: #94a3b8;
+            transition: color 0.2s, transform 0.2s;
+        }
+        .social-icons a:hover {
+            color: #00A651;
+            transform: translateY(-2px);
+        }
+
+        /* ---------- Back to Top ---------- */
+        .back-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: #00A651;
+            color: white;
+            width: 48px;
+            height: 48px;
+            border-radius: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 24px rgba(0, 166, 81, 0.3);
+            cursor: pointer;
+            transition: 0.2s;
+            border: none;
+            font-size: 1.2rem;
+        }
+        .back-top:hover {
+            background: #006C3B;
+            transform: scale(1.05);
+        }
+
+        /* ---------- Utilities ---------- */
+        .py-16 {
+            padding: 4rem 0;
+        }
+        .text-center {
+            text-align: center;
+        }
+
+        /* ============================================
+   Footer - Enhanced with Logo
+   ============================================ */
+
+.footer {
+    background: #0b1a14;
+    color: #cbd5e1;
+    padding: 4rem 0 0;
+    margin-top: 3rem;
+    transition: background 0.3s;
+}
+
+body.dark .footer {
+    background: #0a0f1a;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* ---------- Column 1: Brand ---------- */
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 12px;
+    transition: transform 0.3s;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 4px;
+}
+
+.footer-logo:hover {
+    transform: scale(1.05);
+}
+
+.footer-logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+.footer-brand-name {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #00A651;
+    letter-spacing: -0.5px;
+}
+
+.footer-tagline {
+    font-size: 0.6rem;
+    font-weight: 600;
+    color: #74C043;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.footer-description {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    max-width: 320px;
+    margin-top: 0.2rem;
+}
+
+/* Social Icons */
+.footer-social {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 0.2rem;
+}
+
+.footer-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    color: #94a3b8;
+    font-size: 1rem;
+    transition: all 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.footer-social a:hover {
+    background: #00A651;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0, 166, 81, 0.25);
+    border-color: #00A651;
+}
+
+/* ---------- Columns 2 & 3: Links ---------- */
+.footer-links h4 {
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+    letter-spacing: -0.01em;
+}
+
+.footer-links a {
+    display: block;
+    color: #94a3b8;
+    font-size: 0.9rem;
+    padding: 0.3rem 0;
+    transition: all 0.2s;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #00A651;
+    transform: translateX(4px);
+}
+
+/* ---------- Column 4: Contact ---------- */
+.footer-contact h4 {
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+    letter-spacing: -0.01em;
+}
+
+.footer-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0.4rem 0;
+    color: #94a3b8;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.footer-contact-item:hover {
+    color: #e2e8f0;
+}
+
+.footer-contact-item i {
+    width: 20px;
+    color: #00A651;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+/* ---------- Footer Bottom ---------- */
+.footer-bottom {
+    padding: 1.5rem 0;
+    margin-top: 0.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.footer-bottom p {
+    color: #64748B;
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+/* ============================================
+   Why Choose Section - Row Layout
+   ============================================ */
+
+.why-choose-section {
+    padding: 5rem 0 4rem;
+    background: linear-gradient(145deg, #f8fbfa 0%, #eef5f2 100%);
+    transition: background 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+body.dark .why-choose-section {
+    background: linear-gradient(145deg, #0b1a14 0%, #0f221b 100%);
+}
+
+/* Subtle background pattern */
+.why-choose-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background: 
+        radial-gradient(ellipse at 20% 80%, rgba(0, 166, 81, 0.04) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 20%, rgba(0, 166, 81, 0.03) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+.why-choose-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+.why-choose-section .section-title {
+    font-size: clamp(2.2rem, 4vw, 3.2rem);
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    color: #0b1a14;
+    transition: color 0.3s;
+}
+
+body.dark .why-choose-section .section-title {
+    color: #e8f0ec;
+}
+
+.why-choose-section .section-title .text-gradient {
+    background: linear-gradient(135deg, #00A651, #006C3B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.why-choose-section .section-subtitle {
+    color: #64748B;
+    font-size: 1.1rem;
+    max-width: 500px;
+    margin: 0 auto 3rem;
+    transition: color 0.3s;
+}
+
+body.dark .why-choose-section .section-subtitle {
+    color: #94a3b8;
+}
+
+/* Features Grid - Row Layout */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin: 0 auto 3rem;
+}
+
+/* Feature Cards */
+.feature-card {
+    background: white;
+    border-radius: 24px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 166, 81, 0.06);
+    position: relative;
+    overflow: hidden;
+}
+
+body.dark .feature-card {
+    background: #1a2a22;
+    border-color: rgba(0, 166, 81, 0.08);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 48px -12px rgba(0, 166, 81, 0.15);
+    border-color: rgba(0, 166, 81, 0.12);
+}
+
+body.dark .feature-card:hover {
+    box-shadow: 0 20px 48px -12px rgba(0, 166, 81, 0.2);
+    border-color: rgba(0, 166, 81, 0.2);
+}
+
+/* Glowing border effect on hover */
+.feature-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #00A651, transparent);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.feature-card:hover::before {
+    opacity: 1;
+}
+
+/* Icon */
+.feature-icon-wrapper {
+    width: 72px;
+    height: 72px;
+    margin: 0 auto 1rem;
+    background: linear-gradient(135deg, rgba(0, 166, 81, 0.1), rgba(0, 108, 59, 0.05));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.feature-card:hover .feature-icon-wrapper {
+    background: linear-gradient(135deg, rgba(0, 166, 81, 0.2), rgba(0, 108, 59, 0.1));
+    transform: scale(1.05);
+}
+
+.feature-icon-wrapper i {
+    font-size: 2rem;
+    color: #00A651;
+    transition: all 0.3s;
+}
+
+body.dark .feature-icon-wrapper i {
+    color: #4cdb8f;
+}
+
+.feature-card:hover .feature-icon-wrapper i {
+    transform: scale(1.1);
+}
+
+/* Text */
+.feature-card h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #0b1a14;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s;
+}
+
+body.dark .feature-card h4 {
+    color: #e8f0ec;
+}
+
+.feature-card p {
+    color: #64748B;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 0;
+    transition: color 0.3s;
+}
+
+body.dark .feature-card p {
+    color: #94a3b8;
+}
+
+/* CTA Section */
+.why-choose-cta {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: linear-gradient(135deg, #00A651, #006C3B);
+    border-radius: 24px;
+    color: white;
+    margin-top: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.why-choose-cta::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: 
+        radial-gradient(ellipse at 20% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 20%, rgba(255, 255, 255, 0.05) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+.why-choose-cta h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+    position: relative;
+    z-index: 1;
+}
+
+.why-choose-cta p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.why-choose-cta .btn {
+    background: white;
+    color: #006C3B;
+    padding: 14px 36px;
+    font-weight: 700;
+    font-size: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+.why-choose-cta .btn:hover {
+    background: #f0f7f3;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+
+.why-choose-cta .btn i {
+    color: #006C3B;
+}
+
+/* ---------- Responsive ---------- */
+
+/* Tablet: 2 columns */
+@media (max-width: 1024px) {
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+/* Mobile: 1 column */
+@media (max-width: 640px) {
+    .why-choose-section {
+        padding: 3rem 0;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+        max-width: 380px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .feature-card {
+        padding: 1.5rem 1.2rem;
+    }
+
+    .feature-icon-wrapper {
+        width: 60px;
+        height: 60px;
+    }
+
+    .feature-icon-wrapper i {
+        font-size: 1.6rem;
+    }
+
+    .feature-card h4 {
+        font-size: 1.1rem;
+    }
+
+    .why-choose-cta {
+        padding: 2rem 1.5rem;
+        border-radius: 20px;
+    }
+
+    .why-choose-cta h3 {
+        font-size: 1.5rem;
+    }
+
+    .why-choose-cta p {
+        font-size: 1rem;
+    }
+
+    .why-choose-cta .btn {
+        padding: 12px 28px;
+        font-size: 0.9rem;
+    }
+
+    .why-choose-section .section-subtitle {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+}
+
+/* Small mobile */
+@media (max-width: 400px) {
+    .feature-card {
+        padding: 1.2rem 1rem;
+    }
+
+    .feature-icon-wrapper {
+        width: 52px;
+        height: 52px;
+    }
+
+    .feature-icon-wrapper i {
+        font-size: 1.4rem;
+    }
+
+    .why-choose-cta h3 {
+        font-size: 1.3rem;
+    }
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1024px) {
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 2.5rem;
+    }
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+    .footer-description {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 3rem 0 0;
+    }
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding-bottom: 2rem;
+    }
+    .footer-brand {
+        grid-column: 1;
+    }
+    .footer-logo-wrapper {
+        justify-content: center;
+    }
+    .footer-description {
+        text-align: center;
+    }
+    .footer-social {
+        justify-content: center;
+    }
+    .footer-links {
+        text-align: center;
+    }
+    .footer-links a {
+        padding: 0.2rem 0;
+    }
+    .footer-contact {
+        text-align: center;
+    }
+    .footer-contact-item {
+        justify-content: center;
+    }
+    .footer-logo {
+        width: 50px;
+        height: 50px;
+    }
+    .footer-brand-name {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-logo {
+        width: 44px;
+        height: 44px;
+    }
+    .footer-brand-name {
+        font-size: 0.9rem;
+    }
+    .footer-tagline {
+        font-size: 0.5rem;
+    }
+    .footer-social a {
+        width: 36px;
+        height: 36px;
+        font-size: 0.85rem;
+    }
+    .footer-contact-item {
+        font-size: 0.8rem;
+    }
+}
+
+        /* ---------- Responsive ---------- */
+        @media (max-width: 1024px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                background: white;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                padding: 2rem;
+                gap: 1.2rem;
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+            }
+            body.dark .nav-links {
+                background: #1a2332;
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            }
+            .nav-links.open {
+                display: flex;
+            }
+            .hamburger {
+                display: block;
+            }
+            .stats {
+                grid-template-columns: 1fr 1fr;
+            }
+            .logo-text .brand {
+                font-size: 1.1rem;
+            }
+            .logo-text .tagline {
+                font-size: 0.6rem;
+            }
+        }
+        @media (max-width: 480px) {
+            .btn {
+                padding: 12px 24px;
+                font-size: 0.9rem;
+            }
+            .stats {
+                grid-template-columns: 1fr;
+            }
+            .logo-text .brand {
+                font-size: 0.95rem;
+            }
+            .logo-text .tagline {
+                font-size: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container nav-flex">
+            <a href="../index.html" class="logo">
+                <img src="../Pics/Logo.png" alt="Ekson Afrique Logo">
+
+                <div class="logo-text">
+                    <span class="brand">EKSON AFRIQUE</span>
+                    <span class="tagline">YOUR PROCUREMENT PARTNER</span>
+                </div>
+            </a>
+
+            <div class="nav-links" id="navLinks">
+                <a href="../index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="products.html">Products</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+                <button class="dark-toggle" id="darkToggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <div class="hamburger" id="hamburger" aria-label="Menu" role="button" tabindex="0">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== ABOUT CONTENT ===== -->
+    <section class="container about-grid py-16">
+        <div>
+            <h2 class="section-title">About Ekson Afrique</h2>
+            <p style="color:#64748B; font-size:1.1rem; transition: color 0.3s;">Ekson Afrique Ltd, founded in 2018, is a service provider company specializing in engineering, security systems, energy solar solutions, and general branding and supplies. With over a decade of experience, we deliver innovative, sustainable, and customized solutions.</p>
+            
+            <div style="margin-top:1.5rem;">
+                <h4 style="color:#00A651;">Mission</h4>
+                <p style="color:#64748B;">To provide high-quality, reliable, and sustainable solutions that empower our clients to achieve their goals while promoting environmental stewardship and operational efficiency.</p>
+                <h4 style="color:#00A651; margin-top:1rem;">Vision</h4>
+                <p style="color:#64748B;">To be the preferred procurement partner in Kenya, driving innovation and sustainability in engineering, energy, and branding solutions while fostering long-term partnerships.</p>
+            </div>
+
+            <!-- ===== ANIMATED STATS ===== -->
+            <div class="stats" id="statsContainer">
+                <div class="stat-item">
+                    <div class="stat-number" data-count="500">0</div>
+                    <div>Clients</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="25">0</div>
+                    <div>Professionals</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="98">0</div>
+                    <div>% Satisfaction</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="2018">0</div>
+                    <div>Founded</div>
+                </div>
+            </div>
+        </div>
+        
+        <div style="background: #d4e8e0; border-radius: 32px; min-height: 220px; display: flex; align-items: center; justify-content: center; font-weight: 600; color: #006C3B; font-size: 1.4rem; transition: background 0.3s, color 0.3s;">
+            Engineering in action
+        </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="container">
+        <div class="cta-section">
+            <h2 style="font-size:2.8rem;">Ready to Work With Us?</h2>
+            <p style="font-size:1.4rem; opacity:0.9;">Let's build something great together.</p>
+            <a href="contact.html" class="btn" style="background:white; color:#006C3B; margin-top:1.5rem;">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+<footer class="footer">
+    <div class="container footer-grid">
+        <!-- Column 1: Logo & About -->
+        <div class="footer-brand">
+            <div class="footer-logo-wrapper">
+                <img src="../Pics/Logo.png" alt="Ekson Afrique Logo" class="footer-logo" />
+                <div class="footer-logo-text">
+                    <span class="footer-brand-name">EKSON AFRIQUE</span>
+                    <span class="footer-tagline">YOUR PROCUREMENT PARTNER</span>
+                </div>
+            </div>
+            <p class="footer-description">Engineering Africa's future. We deliver innovative industrial solutions across Kenya and beyond.</p>
+            <div class="footer-social">
+                    <a href="https://www.linkedin.com/company/ekson-afrique/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://web.facebook.com/eksonafriqueltd/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+
+                    <a href="https://www.instagram.com/ekson_afrique/"  aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+
+                    <a href="https://twitter.com" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+
+                    <a href="https://www.youtube.com" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <a href="services.html">Services</a>
+            <a href="products.html">Products</a>
+            <a href="projects.html">Projects</a>
+            <a href="about.html">About Us</a>
+        </div>
+
+        <!-- Column 3: Support -->
+        <div class="footer-links">
+            <h4>Support</h4>
+            <a href="contact.html">Contact Us</a>
+            <a href="#">Careers</a>
+                <a href="#" id="privacyPolicyLink">Privacy Policy</a>
+        <div class="footer-contact">
+            <h4>Get In Touch</h4>
+            <div class="footer-contact-item">
+                <i class="fas fa-phone-alt"></i>
+                <span>+254 700 000 000</span>
+            </div>
+            <div class="footer-contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>info@eksonafrique.com</span>
+            </div>
+            <div class="footer-contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Nairobi, Kenya</span>
+            </div>
+            <div class="footer-contact-item">
+                <i class="fas fa-clock"></i>
+                <span>Mon-Fri: 8:00 AM - 5:00 PM</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <div class="container">
+            <p>&copy; 2026 Ekson Afrique Ltd. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+    <!-- ===== BACK TO TOP ===== -->
+    <button class="back-top" id="backTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- ===== EMBEDDED JAVASCRIPT ===== -->
+    <script>
+        /* ============================================
+           Ekson Afrique - About Page JavaScript
+           ============================================ */
+
+        document.addEventListener('DOMContentLoaded', function() {
+
+            // ---------- Mobile Hamburger Menu ----------
+            const hamburger = document.getElementById('hamburger');
+            const navLinks = document.getElementById('navLinks');
+
+            if (hamburger && navLinks) {
+                hamburger.addEventListener('click', function() {
+                    navLinks.classList.toggle('open');
+                });
+            }
+
+            // ---------- Back to Top ----------
+            const backTop = document.getElementById('backTop');
+            if (backTop) {
+                backTop.addEventListener('click', function() {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+            }
+
+            // ---------- Dark Mode Toggle ----------
+            const darkToggle = document.getElementById('darkToggle');
+            if (darkToggle) {
+                darkToggle.addEventListener('click', function() {
+                    document.body.classList.toggle('dark');
+                    const icon = this.querySelector('i');
+                    if (document.body.classList.contains('dark')) {
+                        icon.className = 'fas fa-sun';
+                    } else {
+                        icon.className = 'fas fa-moon';
+                    }
+                });
+            }
+
+            // ---------- Active Navigation Link ----------
+            const currentPage = window.location.pathname.split('/').pop() || 'about.html';
+            const navLinksAll = document.querySelectorAll('.nav-links a');
+            navLinksAll.forEach(function(link) {
+                const href = link.getAttribute('href');
+                if (href === currentPage) {
+                    link.classList.add('active');
+                }
+            });
+
+            // ============================================
+            // ANIMATED COUNTERS
+            // ============================================
+            
+            const counters = document.querySelectorAll('.stat-number');
+            const statsContainer = document.getElementById('statsContainer');
+            
+            if (counters.length > 0 && statsContainer) {
+
+                // Store target values
+                counters.forEach(function(counter) {
+                    const target = parseInt(counter.dataset.count);
+                    counter.dataset.target = target;
+                });
+
+                // Function to animate a single counter
+                function animateCounter(element, target) {
+                    let current = 0;
+                    const duration = 2000; // 2 seconds
+                    const steps = 60;
+                    const increment = target / steps;
+                    let step = 0;
+                    const isPercentage = target === 98;
+
+                    // Add counting class for pulse effect
+                    element.classList.add('counting');
+
+                    const timer = setInterval(function() {
+                        step++;
+                        current += increment;
+
+                        if (step >= steps) {
+                            element.textContent = target + (isPercentage ? '%' : '');
+                            element.classList.remove('counting');
+                            clearInterval(timer);
+                        } else {
+                            const displayValue = Math.floor(current);
+                            element.textContent = displayValue + (isPercentage ? '%' : '');
+                        }
+                    }, duration / steps);
+                }
+
+                // Create Intersection Observer for stats container
+                const statsObserver = new IntersectionObserver(function(entries) {
+                    entries.forEach(function(entry) {
+                        if (entry.isIntersecting) {
+                            // Fade in the stats container
+                            statsContainer.classList.add('visible');
+
+                            // Animate each stat item with staggered delay
+                            const statItems = document.querySelectorAll('.stat-item');
+                            statItems.forEach(function(item, index) {
+                                setTimeout(function() {
+                                    item.classList.add('visible');
+                                    // Start counter animation
+                                    const counter = item.querySelector('.stat-number');
+                                    if (counter && !counter.dataset.animated) {
+                                        counter.dataset.animated = 'true';
+                                        const target = parseInt(counter.dataset.target);
+                                        animateCounter(counter, target);
+                                    }
+                                }, index * 200); // 200ms delay between each item
+                            });
+
+                            // Unobserve after triggering
+                            statsObserver.unobserve(statsContainer);
+                        }
+                    });
+                }, { threshold: 0.3 });
+
+                // Start observing the stats container
+                statsObserver.observe(statsContainer);
+
+                // Also observe each stat item individually as a fallback
+                const statItems = document.querySelectorAll('.stat-item');
+                const itemObserver = new IntersectionObserver(function(entries) {
+                    entries.forEach(function(entry) {
+                        if (entry.isIntersecting) {
+                            const item = entry.target;
+                            // Don't trigger if already visible
+                            if (item.classList.contains('visible')) return;
+                            
+                            const counter = item.querySelector('.stat-number');
+                            if (counter && !counter.dataset.animated) {
+                                // Find the index for staggered delay
+                                const index = Array.from(statItems).indexOf(item);
+                                setTimeout(function() {
+                                    item.classList.add('visible');
+                                    counter.dataset.animated = 'true';
+                                    const target = parseInt(counter.dataset.target);
+                                    animateCounter(counter, target);
+                                }, index * 200);
+                            }
+                            itemObserver.unobserve(item);
+                        }
+                    });
+                }, { threshold: 0.4 });
+
+                // Observe each stat item as backup
+                statItems.forEach(function(item) {
+                    itemObserver.observe(item);
+                });
+            }
+
+        });
+    </script>
+    <script src="../JS/privacy-modal.js"></script>
+
+<div class="modal-overlay" id="privacyModal">
+    <div class="modal-container">
+        <div class="modal-header">
+            <h2>Privacy Policy</h2>
+            <button class="modal-close-btn" id="closeModalBtn" aria-label="Close modal">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="modal-content">
+                <p><strong>Last Updated:</strong> July 2026</p>
+                <h3>1. Information We Collect</h3>
+                <p>Ekson Afrique Ltd collects information you provide directly, such as when you contact us, request a quote, or sign up for our newsletter. This may include:</p>
+                <ul>
+                    <li>Name and contact information</li>
+                    <li>Company details</li>
+                    <li>Project requirements</li>
+                    <li>Communication preferences</li>
+                </ul>
+                <h3>2. How We Use Your Information</h3>
+                <p>We use the information we collect to:</p>
+                <ul>
+                    <li>Provide and improve our services</li>
+                    <li>Respond to inquiries and requests</li>
+                    <li>Send important updates and communications</li>
+                    <li>Comply with legal obligations</li>
+                </ul>
+                <h3>3. Information Sharing</h3>
+                <p>We do not sell, trade, or rent your personal information to third parties. We may share information with:</p>
+                <ul>
+                    <li>Service providers who assist with our operations</li>
+                    <li>Legal authorities when required by law</li>
+                    <li>Business partners with your consent</li>
+                </ul>
+                <h3>4. Data Security</h3>
+                <p>We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction.</p>
+                <h3>5. Your Rights</h3>
+                <p>You have the right to:</p>
+                <ul>
+                    <li>Access your personal data</li>
+                    <li>Request corrections to your data</li>
+                    <li>Request deletion of your data</li>
+                    <li>Opt-out of marketing communications</li>
+                </ul>
+                <h3>6. Cookies</h3>
+                <p>We use cookies to enhance your browsing experience. You can control cookie preferences through your browser settings.</p>
+                <h3>7. Changes to This Policy</h3>
+                <p>We may update this privacy policy from time to time. We will notify you of any significant changes by posting the new policy on this page.</p>
+                <h3>8. Contact Us</h3>
+                <p>If you have any questions about this Privacy Policy, please contact us:</p>
+                <ul>
+                    <li><strong>Email:</strong> info@eksonafrique.com</li>
+                    <li><strong>Phone:</strong> +254 700 000 000</li>
+                    <li><strong>Address:</strong> Nairobi, Kenya</li>
+                </ul>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="modal-close-btn-secondary" id="closeModalBtnSecondary">Close</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

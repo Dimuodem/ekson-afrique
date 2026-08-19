@@ -1,0 +1,371 @@
+/* ============================================
+   Intro Section - Enhanced Background & Text
+   ============================================ */
+
+/* ---------- Intro / Hero Override ---------- */
+.intro-section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 4rem 0;
+    overflow: hidden;
+    background: #f0f7f3;
+    transition: background 0.3s;
+}
+
+body.dark .intro-section {
+    background: #0b1a14;
+}
+
+/* Animated gradient background with engineering vibe */
+.intro-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background: 
+        radial-gradient(circle at 10% 20%, rgba(0, 166, 81, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 90% 80%, rgba(0, 166, 81, 0.06) 0%, transparent 50%),
+        radial-gradient(circle at 50% 50%, rgba(0, 108, 59, 0.03) 0%, transparent 70%);
+    animation: ambientGlow 12s ease-in-out infinite alternate;
+}
+
+@keyframes ambientGlow {
+    0% {
+        opacity: 0.6;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+}
+
+/* Subtle engineering pattern overlay */
+.intro-section::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background-image: 
+        repeating-linear-gradient(45deg, 
+            rgba(0, 166, 81, 0.02) 0px, 
+            rgba(0, 166, 81, 0.02) 2px,
+            transparent 2px, 
+            transparent 8px
+        ),
+        repeating-linear-gradient(-45deg, 
+            rgba(0, 166, 81, 0.02) 0px, 
+            rgba(0, 166, 81, 0.02) 2px,
+            transparent 2px, 
+            transparent 8px
+        );
+    pointer-events: none;
+}
+
+/* Gear / industry icon decoration */
+.intro-section .bg-decoration {
+    position: absolute;
+    right: -5%;
+    bottom: -10%;
+    font-size: 28rem;
+    opacity: 0.04;
+    color: #006C3B;
+    z-index: 0;
+    user-select: none;
+    pointer-events: none;
+    transform: rotate(12deg);
+}
+
+body.dark .intro-section .bg-decoration {
+    color: #00A651;
+    opacity: 0.06;
+}
+
+/* Container for intro content - above background */
+.intro-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Hero grid with better text contrast */
+.intro-section .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+/* Text styling with enhanced visibility */
+.intro-section h1 {
+    font-size: clamp(2.8rem, 7vw, 5rem);
+    font-weight: 800;
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+    color: #0b1a14;
+    transition: color 0.3s;
+}
+
+body.dark .intro-section h1 {
+    color: #e8f0ec;
+}
+
+.intro-section h1 .text-gradient {
+    background: linear-gradient(135deg, #00A651, #006C3B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.intro-section .hero-subtitle {
+    font-size: 1.25rem;
+    color: #2d4a3a;
+    max-width: 520px;
+    margin: 1.2rem 0 2rem;
+    line-height: 1.7;
+    font-weight: 400;
+    transition: color 0.3s;
+}
+
+body.dark .intro-section .hero-subtitle {
+    color: #b6ccc2;
+}
+
+/* Hero image with enhanced styling */
+.intro-section .hero-image {
+    background: #dcebe4;
+    border-radius: 32px;
+    min-height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 24px 48px -16px rgba(0, 0, 0, 0.08);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(0, 166, 81, 0.1);
+}
+
+body.dark .intro-section .hero-image {
+    background-color: #1a2a22;
+    box-shadow: 0 24px 48px -16px rgba(0, 0, 0, 0.4);
+}
+
+/* Image styling */
+.intro-section .hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 32px;
+    transition: transform 0.5s ease;
+}
+
+.intro-section .hero-image:hover img {
+    transform: scale(1.02);
+}
+
+/* Fallback icon if image doesn't load */
+.intro-section .hero-image .image-icon {
+    display: none;
+    font-size: 6rem;
+    opacity: 0.3;
+    color: #006C3B;
+}
+
+.intro-section .hero-image img:not([src]) + .image-icon,
+.intro-section .hero-image img[src=""] + .image-icon {
+    display: block;
+}
+
+body.dark .intro-section .hero-image .image-icon {
+    color: #4cdb8f;
+    opacity: 0.25;
+}
+
+/* Floating elements for engineering feel */
+.intro-section .floating-dots {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.intro-section .floating-dots span {
+    position: absolute;
+    display: block;
+    width: 6px;
+    height: 6px;
+    background: rgba(0, 166, 81, 0.15);
+    border-radius: 50%;
+    animation: floatDot 20s infinite linear;
+}
+
+.intro-section .floating-dots span:nth-child(1) { top: 10%; left: 8%; animation-delay: 0s; width: 8px; height: 8px; }
+.intro-section .floating-dots span:nth-child(2) { top: 25%; right: 12%; animation-delay: -3s; }
+.intro-section .floating-dots span:nth-child(3) { bottom: 30%; left: 15%; animation-delay: -7s; width: 10px; height: 10px; }
+.intro-section .floating-dots span:nth-child(4) { bottom: 20%; right: 20%; animation-delay: -11s; }
+.intro-section .floating-dots span:nth-child(5) { top: 60%; left: 5%; animation-delay: -5s; width: 12px; height: 12px; opacity: 0.08; }
+
+@keyframes floatDot {
+    0% { transform: translate(0, 0) scale(1); opacity: 0.1; }
+    25% { transform: translate(20px, -30px) scale(1.2); opacity: 0.3; }
+    50% { transform: translate(-10px, -60px) scale(0.8); opacity: 0.15; }
+    75% { transform: translate(30px, -20px) scale(1.1); opacity: 0.25; }
+    100% { transform: translate(0, 0) scale(1); opacity: 0.1; }
+}
+
+/* Buttons with better contrast */
+.intro-section .hero-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.intro-section .btn {
+    padding: 14px 36px;
+    font-size: 1rem;
+    font-weight: 600;
+    background: #00A651;
+    color: white;
+    border: none;
+    border-radius: 60px;
+    cursor: pointer;
+    transition: all 0.25s;
+    box-shadow: 0 4px 16px rgba(0, 166, 81, 0.25);
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.intro-section .btn:hover {
+    background: #006C3B;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 28px rgba(0, 166, 81, 0.35);
+}
+
+.intro-section .btn-outline {
+    background: transparent;
+    border: 2px solid #00A651;
+    color: #00A651;
+    box-shadow: none;
+}
+
+.intro-section .btn-outline:hover {
+    background: #00A651;
+    color: white;
+    box-shadow: 0 8px 28px rgba(0, 166, 81, 0.25);
+}
+
+body.dark .intro-section .btn-outline {
+    border-color: #4cdb8f;
+    color: #4cdb8f;
+}
+
+body.dark .intro-section .btn-outline:hover {
+    background: #4cdb8f;
+    color: #0b1a14;
+}
+
+/* Scroll indicator */
+.intro-section .scroll-indicator {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #64748B;
+    font-size: 0.85rem;
+    animation: bounce 2s infinite;
+    transition: color 0.3s;
+}
+
+body.dark .intro-section .scroll-indicator {
+    color: #94a3b8;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(8px); }
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1024px) {
+    .intro-section .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        text-align: center;
+    }
+    .intro-section .hero-subtitle {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .intro-section .hero-buttons {
+        justify-content: center;
+    }
+    .intro-section .bg-decoration {
+        font-size: 18rem;
+        right: -2%;
+        bottom: -5%;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro-section {
+        min-height: auto;
+        padding: 3rem 0;
+    }
+    .intro-section h1 {
+        font-size: 2.6rem;
+    }
+    .intro-section .hero-subtitle {
+        font-size: 1.05rem;
+    }
+    .intro-section .hero-image {
+        min-height: 220px;
+        border-radius: 24px;
+    }
+    .intro-section .hero-image img {
+        border-radius: 24px;
+    }
+    .intro-section .bg-decoration {
+        font-size: 12rem;
+    }
+    .intro-section .floating-dots span {
+        display: none;
+    }
+    .intro-section .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .intro-section .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro-section h1 {
+        font-size: 2.2rem;
+    }
+    .intro-section .hero-image {
+        min-height: 180px;
+        border-radius: 20px;
+    }
+    .intro-section .hero-image img {
+        border-radius: 20px;
+    }
+    .intro-section .btn {
+        padding: 12px 28px;
+        font-size: 0.9rem;
+    }
+    .intro-section .bg-decoration {
+        font-size: 8rem;
+        right: 0;
+        bottom: 0;
+    }
+}

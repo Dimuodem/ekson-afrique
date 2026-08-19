@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Services – Ekson Afrique</title>
+    <meta name="description" content="Ekson Afrique offers engineering, security, energy, and branding services across Kenya." />
+    <meta property="og:title" content="Our Services – Ekson Afrique" />
+    <meta property="og:description" content="Engineering, security, solar energy, and branding solutions." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚙️</text></svg>" />
+    <!-- Google Fonts Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet" />
+    <!-- Font Awesome 6 (Free) CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="../css/style.css" />
+      <link rel="stylesheet" href="../css/adjustments.css" />
+      <link rel="stylesheet" href="../css/privacy.css" />
+   <style>
+    /* ============================================
+   Footer - Enhanced with Logo
+   ============================================ */
+
+.footer {
+    background: #0b1a14;
+    color: #cbd5e1;
+    padding: 4rem 0 0;
+    margin-top: 3rem;
+    transition: background 0.3s;
+}
+
+body.dark .footer {
+    background: #0a0f1a;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* ---------- Column 1: Brand ---------- */
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 12px;
+    transition: transform 0.3s;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 4px;
+}
+
+.footer-logo:hover {
+    transform: scale(1.05);
+}
+
+.footer-logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+.footer-brand-name {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #00A651;
+    letter-spacing: -0.5px;
+}
+
+.footer-tagline {
+    font-size: 0.6rem;
+    font-weight: 600;
+    color: #74C043;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.footer-description {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    max-width: 320px;
+    margin-top: 0.2rem;
+}
+
+/* Social Icons */
+.footer-social {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 0.2rem;
+}
+
+.footer-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    color: #94a3b8;
+    font-size: 1rem;
+    transition: all 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.footer-social a:hover {
+    background: #00A651;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0, 166, 81, 0.25);
+    border-color: #00A651;
+}
+
+/* ---------- Columns 2 & 3: Links ---------- */
+.footer-links h4 {
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+    letter-spacing: -0.01em;
+}
+
+.footer-links a {
+    display: block;
+    color: #94a3b8;
+    font-size: 0.9rem;
+    padding: 0.3rem 0;
+    transition: all 0.2s;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #00A651;
+    transform: translateX(4px);
+}
+
+/* ---------- Column 4: Contact ---------- */
+.footer-contact h4 {
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+    letter-spacing: -0.01em;
+}
+
+.footer-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0.4rem 0;
+    color: #94a3b8;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.footer-contact-item:hover {
+    color: #e2e8f0;
+}
+
+.footer-contact-item i {
+    width: 20px;
+    color: #00A651;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+/* ---------- Footer Bottom ---------- */
+.footer-bottom {
+    padding: 1.5rem 0;
+    margin-top: 0.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.footer-bottom p {
+    color: #64748B;
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+/* ============================================
+   Why Choose Section - Row Layout
+   ============================================ */
+
+.why-choose-section {
+    padding: 5rem 0 4rem;
+    background: linear-gradient(145deg, #f8fbfa 0%, #eef5f2 100%);
+    transition: background 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+body.dark .why-choose-section {
+    background: linear-gradient(145deg, #0b1a14 0%, #0f221b 100%);
+}
+
+/* Subtle background pattern */
+.why-choose-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background: 
+        radial-gradient(ellipse at 20% 80%, rgba(0, 166, 81, 0.04) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 20%, rgba(0, 166, 81, 0.03) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+.why-choose-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+.why-choose-section .section-title {
+    font-size: clamp(2.2rem, 4vw, 3.2rem);
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    color: #0b1a14;
+    transition: color 0.3s;
+}
+
+body.dark .why-choose-section .section-title {
+    color: #e8f0ec;
+}
+
+.why-choose-section .section-title .text-gradient {
+    background: linear-gradient(135deg, #00A651, #006C3B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.why-choose-section .section-subtitle {
+    color: #64748B;
+    font-size: 1.1rem;
+    max-width: 500px;
+    margin: 0 auto 3rem;
+    transition: color 0.3s;
+}
+
+body.dark .why-choose-section .section-subtitle {
+    color: #94a3b8;
+}
+
+/* Features Grid - Row Layout */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin: 0 auto 3rem;
+}
+
+/* Feature Cards */
+.feature-card {
+    background: white;
+    border-radius: 24px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 166, 81, 0.06);
+    position: relative;
+    overflow: hidden;
+}
+
+body.dark .feature-card {
+    background: #1a2a22;
+    border-color: rgba(0, 166, 81, 0.08);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 48px -12px rgba(0, 166, 81, 0.15);
+    border-color: rgba(0, 166, 81, 0.12);
+}
+
+body.dark .feature-card:hover {
+    box-shadow: 0 20px 48px -12px rgba(0, 166, 81, 0.2);
+    border-color: rgba(0, 166, 81, 0.2);
+}
+
+/* Glowing border effect on hover */
+.feature-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #00A651, transparent);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.feature-card:hover::before {
+    opacity: 1;
+}
+
+/* Icon */
+.feature-icon-wrapper {
+    width: 72px;
+    height: 72px;
+    margin: 0 auto 1rem;
+    background: linear-gradient(135deg, rgba(0, 166, 81, 0.1), rgba(0, 108, 59, 0.05));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.feature-card:hover .feature-icon-wrapper {
+    background: linear-gradient(135deg, rgba(0, 166, 81, 0.2), rgba(0, 108, 59, 0.1));
+    transform: scale(1.05);
+}
+
+.feature-icon-wrapper i {
+    font-size: 2rem;
+    color: #00A651;
+    transition: all 0.3s;
+}
+
+body.dark .feature-icon-wrapper i {
+    color: #4cdb8f;
+}
+
+.feature-card:hover .feature-icon-wrapper i {
+    transform: scale(1.1);
+}
+
+/* Text */
+.feature-card h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #0b1a14;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s;
+}
+
+body.dark .feature-card h4 {
+    color: #e8f0ec;
+}
+
+.feature-card p {
+    color: #64748B;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 0;
+    transition: color 0.3s;
+}
+
+body.dark .feature-card p {
+    color: #94a3b8;
+}
+
+/* CTA Section */
+.why-choose-cta {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: linear-gradient(135deg, #00A651, #006C3B);
+    border-radius: 24px;
+    color: white;
+    margin-top: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.why-choose-cta::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: 
+        radial-gradient(ellipse at 20% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 20%, rgba(255, 255, 255, 0.05) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+.why-choose-cta h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+    position: relative;
+    z-index: 1;
+}
+
+.why-choose-cta p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.why-choose-cta .btn {
+    background: white;
+    color: #006C3B;
+    padding: 14px 36px;
+    font-weight: 700;
+    font-size: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+.why-choose-cta .btn:hover {
+    background: #f0f7f3;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+
+.why-choose-cta .btn i {
+    color: #006C3B;
+}
+
+/* ---------- Responsive ---------- */
+
+/* Tablet: 2 columns */
+@media (max-width: 1024px) {
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+/* Mobile: 1 column */
+@media (max-width: 640px) {
+    .why-choose-section {
+        padding: 3rem 0;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+        max-width: 380px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .feature-card {
+        padding: 1.5rem 1.2rem;
+    }
+
+    .feature-icon-wrapper {
+        width: 60px;
+        height: 60px;
+    }
+
+    .feature-icon-wrapper i {
+        font-size: 1.6rem;
+    }
+
+    .feature-card h4 {
+        font-size: 1.1rem;
+    }
+
+    .why-choose-cta {
+        padding: 2rem 1.5rem;
+        border-radius: 20px;
+    }
+
+    .why-choose-cta h3 {
+        font-size: 1.5rem;
+    }
+
+    .why-choose-cta p {
+        font-size: 1rem;
+    }
+
+    .why-choose-cta .btn {
+        padding: 12px 28px;
+        font-size: 0.9rem;
+    }
+
+    .why-choose-section .section-subtitle {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+}
+
+/* Small mobile */
+@media (max-width: 400px) {
+    .feature-card {
+        padding: 1.2rem 1rem;
+    }
+
+    .feature-icon-wrapper {
+        width: 52px;
+        height: 52px;
+    }
+
+    .feature-icon-wrapper i {
+        font-size: 1.4rem;
+    }
+
+    .why-choose-cta h3 {
+        font-size: 1.3rem;
+    }
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1024px) {
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 2.5rem;
+    }
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+    .footer-description {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 3rem 0 0;
+    }
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding-bottom: 2rem;
+    }
+    .footer-brand {
+        grid-column: 1;
+    }
+    .footer-logo-wrapper {
+        justify-content: center;
+    }
+    .footer-description {
+        text-align: center;
+    }
+    .footer-social {
+        justify-content: center;
+    }
+    .footer-links {
+        text-align: center;
+    }
+    .footer-links a {
+        padding: 0.2rem 0;
+    }
+    .footer-contact {
+        text-align: center;
+    }
+    .footer-contact-item {
+        justify-content: center;
+    }
+    .footer-logo {
+        width: 50px;
+        height: 50px;
+    }
+    .footer-brand-name {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-logo {
+        width: 44px;
+        height: 44px;
+    }
+    .footer-brand-name {
+        font-size: 0.9rem;
+    }
+    .footer-tagline {
+        font-size: 0.5rem;
+    }
+    .footer-social a {
+        width: 36px;
+        height: 36px;
+        font-size: 0.85rem;
+    }
+    .footer-contact-item {
+        font-size: 0.8rem;
+    }
+}
+   </style>
+
+    
+
+</head>
+<body>
+    <!-- ===== Navigation ===== -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container nav-flex">
+            <a href="../index.html" class="logo">
+                <img src="../Pics/Logo.png" alt="">
+
+                <div class="logo-text">
+                    <span class="brand">EKSON AFRIQUE</span>
+                    <span class="tagline">YOUR PROCUREMENT PARTNER</span>
+                </div>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="../index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="products.html">Products</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+                <button class="dark-toggle" id="darkToggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
+            </div>
+            <div class="hamburger" id="hamburger" aria-label="Menu" role="button" tabindex="0">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== Services Hero ===== -->
+<section class="services-hero">
+    <!-- Background decorations -->
+    <div class="bg-decoration">
+        <i class="fas fa-cogs"></i>
+    </div>
+    <div class="floating-dots">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    
+    <div class="container">
+        <div class="hero-grid">
+            <div>
+                <h1>Our <span class="text-gradient">Core Services</span></h1>
+                <p>We deliver innovative, sustainable, and customized solutions across engineering, security, energy, and branding.</p>
+                <div class="hero-buttons" style="margin-top: 2rem;">
+                    <a href="contact.html" class="btn">
+                        <i class="fas fa-paper-plane" style="margin-right: 8px;"></i> Get a Quote
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image" style="min-height: 200px;" aria-label="Services illustration">
+                <div class="image-icon">
+                    <i class="fas fa-tools"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== Services Grid ===== -->
+<section class="container py-16 services-grid-section">
+    <h2 class="section-title text-center">What We Offer</h2>
+    <p class="text-center" style="color: #64748B; max-width: 600px; margin: 0 auto 2.5rem;">Comprehensive solutions tailored to your needs across multiple industries.</p>
+    
+    <div class="services-grid">
+        <div class="card service-card">
+            <div class="service-icon-wrapper">
+                <i class="fas fa-industry"></i>
+            </div>
+            <h3>Engineering Solutions</h3>
+            <p>Structural design, fabrication and erection of steel structures, steel structural works, and storage water tanks construction.</p>
+            <ul style="text-align: left; margin-top: 1rem; color: #64748B; list-style: none;">
+                <li>✓ Structural steel works</li>
+                <li>✓ Water tanks construction</li>
+                <li>✓ Industrial fans & blowers</li>
+                <li>✓ High pressure centrifugal fans</li>
+            </ul>
+            <a href="contact.html" class="btn" style="margin-top: 1rem; padding: 10px 24px; font-size: 0.9rem;">Get a Quote</a>
+        </div>
+
+        <div class="card service-card">
+            <div class="service-icon-wrapper">
+                <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>Security Solutions</h3>
+            <p>Advanced surveillance systems and customized security installations for your peace of mind.</p>
+            <ul style="text-align: left; margin-top: 1rem; color: #64748B; list-style: none;">
+                <li>✓ CCTV surveillance</li>
+                <li>✓ Access control systems</li>
+                <li>✓ Intrusion detection</li>
+                <li>✓ Security consultancy</li>
+            </ul>
+            <a href="contact.html" class="btn" style="margin-top: 1rem; padding: 10px 24px; font-size: 0.9rem;">Get a Quote</a>
+        </div>
+
+        <div class="card service-card">
+            <div class="service-icon-wrapper">
+                <i class="fas fa-solar-panel"></i>
+            </div>
+            <h3>Energy & Solar Solutions</h3>
+            <p>Solar power installations, clean energy consultancy, and backup power systems for homes and businesses.</p>
+            <ul style="text-align: left; margin-top: 1rem; color: #64748B; list-style: none;">
+                <li>✓ Solar panel installation</li>
+                <li>✓ Backup power systems</li>
+                <li>✓ Energy consultancy</li>
+                <li>✓ Sustainable energy solutions</li>
+            </ul>
+            <a href="contact.html" class="btn" style="margin-top: 1rem; padding: 10px 24px; font-size: 0.9rem;">Get a Quote</a>
+        </div>
+
+        <div class="card service-card">
+            <div class="service-icon-wrapper">
+                <i class="fas fa-paint-brush"></i>
+            </div>
+            <h3>Branding & Supplies</h3>
+            <p>Custom branding for businesses and comprehensive supply chain management services.</p>
+            <ul style="text-align: left; margin-top: 1rem; color: #64748B; list-style: none;">
+                <li>✓ Corporate branding</li>
+                <li>✓ Industrial supplies</li>
+                <li>✓ Procurement services</li>
+                <li>✓ Supply chain management</li>
+            </ul>
+            <a href="contact.html" class="btn" style="margin-top: 1rem; padding: 10px 24px; font-size: 0.9rem;">Get a Quote</a>
+        </div>
+    </div>
+</section>
+
+    <!-- ===== Service Details Section ===== -->
+    <section class="container py-16" style="background: #f1f5f9; border-radius: 48px; margin-bottom: 2rem; padding: 2rem 0;">
+        <div class="container">
+            <h2 class="section-title text-center">Service Details</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem;">
+                <div class="card">
+                    <h4 style="color: #00A651;">Engineering</h4>
+                    <p>From structural design to fabrication and installation, we provide end-to-end engineering solutions for industrial and commercial projects.</p>
+                    <p style="margin-top: 0.5rem; font-weight: 600;">Specialties:</p>
+                    <ul style="color: #64748B; list-style: none;">
+                        <li>• Steel structures</li>
+                        <li>• Water tanks (up to 400cm)</li>
+                        <li>• Industrial ventilation</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h4 style="color: #00A651;">Security Systems</h4>
+                    <p>Protect your assets with our state-of-the-art surveillance and access control solutions tailored to your specific needs.</p>
+                    <p style="margin-top: 0.5rem; font-weight: 600;">Specialties:</p>
+                    <ul style="color: #64748B; list-style: none;">
+                        <li>• CCTV installation</li>
+                        <li>• Access control</li>
+                        <li>• Perimeter security</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h4 style="color: #00A651;">Energy Solutions</h4>
+                    <p>Reduce operational costs and environmental impact with our clean energy solutions, including solar and backup power systems.</p>
+                    <p style="margin-top: 0.5rem; font-weight: 600;">Specialties:</p>
+                    <ul style="color: #64748B; list-style: none;">
+                        <li>• Solar PV systems</li>
+                        <li>• Battery backup</li>
+                        <li>• Energy audits</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="container">
+        <div class="cta-section">
+            <h2 style="font-size: 2.8rem;">Ready to Get Started?</h2>
+            <p style="font-size: 1.4rem; opacity: 0.9;">Let's discuss your project.</p>
+            <a href="contact.html" class="btn" style="background: white; color: #006C3B; margin-top: 1.5rem;">Contact Us Today</a>
+        </div>
+    </section>
+
+       <!-- ===== FOOTER ===== -->
+<footer class="footer">
+    <div class="container footer-grid">
+        <!-- Column 1: Logo & About -->
+        <div class="footer-brand">
+            <div class="footer-logo-wrapper">
+                <img src="../Pics/Logo.png" alt="Ekson Afrique Logo" class="footer-logo" />
+                <div class="footer-logo-text">
+                    <span class="footer-brand-name">EKSON AFRIQUE</span>
+                    <span class="footer-tagline">YOUR PROCUREMENT PARTNER</span>
+                </div>
+            </div>
+            <p class="footer-description">Engineering Africa's future. We deliver innovative industrial solutions across Kenya and beyond.</p>
+            <div class="footer-social">
+                    <a href="https://www.linkedin.com/company/ekson-afrique/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://web.facebook.com/eksonafriqueltd/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+
+                    <a href="https://www.instagram.com/ekson_afrique/"  aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+
+                    <a href="https://twitter.com" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+
+                    <a href="https://www.youtube.com" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <a href="services.html">Services</a>
+            <a href="products.html">Products</a>
+            <a href="projects.html">Projects</a>
+            <a href="about.html">About Us</a>
+        </div>
+
+        <!-- Column 3: Support -->
+        <div class="footer-links">
+            <h4>Support</h4>
+            <a href="contact.html">Contact Us</a>
+            <a href="#">Careers</a>
+            <a href="#" id="privacyPolicyLink">Privacy Policy</a>
+            <a href="#">Newsletter</a>
+        </div>
+
+        <!-- Column 4: Contact Info -->
+        <div class="footer-contact">
+            <h4>Get In Touch</h4>
+            <div class="footer-contact-item">
+                <i class="fas fa-phone-alt"></i>
+                <span>+254 700 000 000</span>
+            </div>
+            <div class="footer-contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>info@eksonafrique.com</span>
+            </div>
+            <div class="footer-contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Nairobi, Kenya</span>
+            </div>
+            <div class="footer-contact-item">
+                <i class="fas fa-clock"></i>
+                <span>Mon-Fri: 8:00 AM - 5:00 PM</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <div class="container">
+            <p>&copy; 2026 Ekson Afrique Ltd. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+    <!-- ===== Back to Top ===== -->
+    <button class="back-top" id="backTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- ============================================
+         EMBEDDED JAVASCRIPT (No external linking)
+         ============================================ -->
+    <script>
+        /* ============================================
+           Ekson Afrique - Main JavaScript (Embedded)
+           ============================================ */
+
+        // ---------- Mobile Hamburger Menu ----------
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.getElementById('hamburger');
+            const navLinks = document.getElementById('navLinks');
+
+            if (hamburger && navLinks) {
+                hamburger.addEventListener('click', function() {
+                    navLinks.classList.toggle('open');
+                });
+
+                // Close menu when clicking outside
+                document.addEventListener('click', function(e) {
+                    if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
+                        navLinks.classList.remove('open');
+                    }
+                });
+
+                // Close menu when clicking a link
+                const links = navLinks.querySelectorAll('a');
+                links.forEach(function(link) {
+                    link.addEventListener('click', function() {
+                        navLinks.classList.remove('open');
+                    });
+                });
+            }
+
+            // ---------- Back to Top ----------
+            const backTop = document.getElementById('backTop');
+            if (backTop) {
+                backTop.addEventListener('click', function() {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+            }
+
+            // ---------- Animated Counters (Intersection Observer) ----------
+            const counters = document.querySelectorAll('.stat-number');
+            if (counters.length > 0) {
+                const observer = new IntersectionObserver(function(entries) {
+                    entries.forEach(function(entry) {
+                        if (entry.isIntersecting) {
+                            const el = entry.target;
+                            const target = parseInt(el.dataset.count);
+                            let current = 0;
+                            const increment = target / 80;
+
+                            const timer = setInterval(function() {
+                                current += increment;
+                                if (current >= target) {
+                                    el.textContent = target + (target === 98 ? '%' : '');
+                                    clearInterval(timer);
+                                } else {
+                                    el.textContent = Math.floor(current) + (target === 98 ? '%' : '');
+                                }
+                            }, 20);
+
+                            observer.unobserve(el);
+                        }
+                    });
+                }, { threshold: 0.5 });
+
+                counters.forEach(function(c) {
+                    observer.observe(c);
+                });
+            }
+
+            // ---------- Dark Mode Toggle ----------
+            const darkToggle = document.getElementById('darkToggle');
+            if (darkToggle) {
+                darkToggle.addEventListener('click', function() {
+                    document.body.classList.toggle('dark');
+                    const icon = this.querySelector('i');
+                    if (document.body.classList.contains('dark')) {
+                        icon.className = 'fas fa-sun';
+                    } else {
+                        icon.className = 'fas fa-moon';
+                    }
+                });
+            }
+
+            // ---------- Active Navigation Link ----------
+            const currentPage = window.location.pathname.split('/').pop() || 'services.html';
+            const navLinksAll = document.querySelectorAll('.nav-links a');
+            navLinksAll.forEach(function(link) {
+                const href = link.getAttribute('href');
+                if (href === currentPage) {
+                    link.classList.add('active');
+                } else if (currentPage === 'services.html' && href === 'services.html') {
+                    link.classList.add('active');
+                }
+            });
+
+            // ---------- Close hamburger on window resize (for tablet/mobile) ----------
+            window.addEventListener('resize', function() {
+                if (window.innerWidth > 768) {
+                    navLinks.classList.remove('open');
+                }
+            });
+
+        });
+    </script>
+    <script src="../JS/privacy-modal.js"></script>
+
+<div class="modal-overlay" id="privacyModal">
+    <div class="modal-container">
+        <div class="modal-header">
+            <h2>Privacy Policy</h2>
+            <button class="modal-close-btn" id="closeModalBtn" aria-label="Close modal">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="modal-content">
+                <p><strong>Last Updated:</strong> July 2026</p>
+                
+                <h3>1. Information We Collect</h3>
+                <p>Ekson Afrique Ltd collects information you provide directly, such as when you contact us, request a quote, or sign up for our newsletter. This may include:</p>
+                <ul>
+                    <li>Name and contact information</li>
+                    <li>Company details</li>
+                    <li>Project requirements</li>
+                    <li>Communication preferences</li>
+                </ul>
+
+                <h3>2. How We Use Your Information</h3>
+                <p>We use the information we collect to:</p>
+                <ul>
+                    <li>Provide and improve our services</li>
+                    <li>Respond to inquiries and requests</li>
+                    <li>Send important updates and communications</li>
+                    <li>Comply with legal obligations</li>
+                </ul>
+
+                <h3>3. Information Sharing</h3>
+                <p>We do not sell, trade, or rent your personal information to third parties. We may share information with:</p>
+                <ul>
+                    <li>Service providers who assist with our operations</li>
+                    <li>Legal authorities when required by law</li>
+                    <li>Business partners with your consent</li>
+                </ul>
+
+                <h3>4. Data Security</h3>
+                <p>We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction.</p>
+
+                <h3>5. Your Rights</h3>
+                <p>You have the right to:</p>
+                <ul>
+                    <li>Access your personal data</li>
+                    <li>Request corrections to your data</li>
+                    <li>Request deletion of your data</li>
+                    <li>Opt-out of marketing communications</li>
+                </ul>
+
+                <h3>6. Cookies</h3>
+                <p>We use cookies to enhance your browsing experience. You can control cookie preferences through your browser settings.</p>
+
+                <h3>7. Changes to This Policy</h3>
+                <p>We may update this privacy policy from time to time. We will notify you of any significant changes by posting the new policy on this page.</p>
+
+                <h3>8. Contact Us</h3>
+                <p>If you have any questions about this Privacy Policy, please contact us:</p>
+                <ul>
+                    <li><strong>Email:</strong> info@eksonafrique.com</li>
+                    <li><strong>Phone:</strong> +254 700 000 000</li>
+                    <li><strong>Address:</strong> Nairobi, Kenya</li>
+                </ul>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="modal-close-btn-secondary" id="closeModalBtnSecondary">Close</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

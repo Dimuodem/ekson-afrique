@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Featured Projects – Ekson Afrique</title>
+    <meta name="description" content="Explore Ekson Afrique's featured engineering projects including NAS Airport, Mavoko Water Tower, KEMSA, and more." />
+    <meta property="og:title" content="Featured Projects – Ekson Afrique" />
+    <meta property="og:description" content="Engineering projects across Kenya including airports, water towers, and industrial facilities." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚙️</text></svg>" />
+    
+    <!-- ===== CSS LINKS ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/contact and projects.css" />
+    <link rel="stylesheet" href="../css/privacy.css" />
+
+    <link rel="stylesheet" href="../css/footer.css">
+
+
+
+</head>
+<body>
+    <!-- ===== Navigation ===== -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container nav-flex">
+            <a href="../index.html" class="logo">
+                <img src="../Pics/Logo.png" alt="Ekson Afrique Logo">
+
+                <div class="logo-text">
+                    <span class="brand">EKSON AFRIQUE</span>
+                    <span class="tagline">YOUR PROCUREMENT PARTNER</span>
+                </div>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="../index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="products.html">Products</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+                <button class="dark-toggle" id="darkToggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <div class="hamburger" id="hamburger" aria-label="Menu" role="button" tabindex="0">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+<!-- ===== PROJECTS HERO ===== -->
+<section class="projects-hero">
+    <!-- Background decorations -->
+    <div class="bg-decoration">
+        <i class="fas fa-hard-hat"></i>
+    </div>
+    <div class="bg-decoration-secondary">
+        <i class="fas fa-drafting-compass"></i>
+    </div>
+    <div class="floating-dots">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    
+    <div class="container">
+        <div class="hero-grid">
+            <div>
+                <div class="breadcrumb">
+                    <span>Home</span>
+                    <i class="fas fa-chevron-right"></i>
+                    <span class="active">Projects</span>
+                </div>
+                <h1>Featured <span class="text-gradient">Projects</span></h1>
+                <p>Explore our portfolio of successful engineering projects across Kenya.</p>
+                <div class="project-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">30+</span>
+                        <span class="stat-label">Happy Clients</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">12+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#projects-grid" class="btn">
+                        <i class="fas fa-th-large" style="margin-right: 8px;"></i> View All Projects
+                    </a>
+                    <a href="contact.html" class="btn btn-outline">
+                        <i class="fas fa-rocket" style="margin-right: 8px;"></i> Start Your Project
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image" aria-label="Projects illustration">
+                <div class="image-content">
+                    <div class="project-card-glow">
+                        <div class="project-card-inner">
+                            <div class="project-icons">
+                                <i class="fas fa-building"></i>
+                                <i class="fas fa-water"></i>
+                                <i class="fas fa-bolt"></i>
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3>Delivering Excellence</h3>
+                            <p>Engineering Africa's future</p>
+                        </div>
+                    </div>
+                    <div class="floating-badge badge-1">
+                        <i class="fas fa-check-circle"></i> Quality Assured
+                    </div>
+                    <div class="floating-badge badge-2">
+                        <i class="fas fa-trophy"></i> Award Winning
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- ===== PROJECTS SECTION (modified) ===== -->
+    <section id="projects-grid" class="container py-16">
+        <h2 class="section-title text-center">Our Portfolio</h2>
+        <p class="text-center" style="color: #64748B; max-width: 600px; margin: 0 auto 1.2rem;">Delivering excellence across diverse industries and sectors.</p>
+
+        <!-- Category Filter Tabs -->
+        <div class="category-tabs" id="projectCategoryTabs">
+            <button class="category-tab active" data-category="all">All</button>
+            <button class="category-tab" data-category="water">Water &amp; Tanks</button>
+            <button class="category-tab" data-category="industrial">Industrial</button>
+            <button class="category-tab" data-category="security">Security</button>
+            <button class="category-tab" data-category="energy">Energy</button>
+        </div>
+
+        <div class="project-grid-wrapper">
+            <div class="project-grid" id="projectGrid">
+
+
+                <!-- ====== PROJECT 1: NAS Airport (Water & Security) ====== -->
+                <div class="project-card" data-category="water security">
+                    <img src="../Pics/nas1.png" alt="">
+                    <div class="project-body">
+                        <span class="project-category-tag">Water &amp; Security</span>
+                        <h4>NAS Airport</h4>
+                        <p>29cm &amp; 400cm water tanks, access control, kitchen hood ventilation</p>
+                        <div class="client-location"><i class="fas fa-user"></i> Kenya Airports Authority</div>
+                        <div class="client-location"><i class="fas fa-map-pin"></i> Nairobi &amp; Mombasa</div>
+                        <div class="project-tags">
+                            <span>Water Tanks</span><span>Security</span><span>Ventilation</span>
+                        </div>
+                        <button class="project-details-toggle" data-target="pinfo-nas"><i class="fas fa-chevron-down"></i> View details</button>
+                        <div class="project-info-panel" id="pinfo-nas">
+                            <p>Project Scope</p>
+                            <ul>
+                                <li>Design, fabricate and erect 29cm galvanised water tank</li>
+                                <li>200 &amp; 400cm corrugated water tanks</li>
+                                <li>Access control systems &amp; kitchen hood ventilation</li>
+                                <li>Outcome: improved water storage and supply efficiency</li>
+                            </ul>
+                        </div>
+                        <a href="contact.html" class="btn">View Project</a>
+                    </div>
+                </div>
+
+
+                            <!-- ====== PROJECT 10: NAS Airport (Industrial) ====== -->
+            <div class="project-card" data-category="industrial">
+                <img class="project-img" src="../Pics/extractionFAn.png" alt="Extraction fan system at NAS Airport" />
+                <div class="project-body">
+                    <span class="project-category-tag">Industrial</span>
+                    <h4>NAS Airport – Extraction Fan</h4>
+                    <p>High-performance extraction fan systems for airport ventilation and air quality control.</p>
+                    <div class="client-location"><i class="fas fa-user"></i> Kenya Airports Authority</div>
+                    <div class="client-location"><i class="fas fa-map-pin"></i> NAS Airport, Nairobi</div>
+                    <div class="project-tags">
+                        <span>Extraction Fan</span><span>Ventilation</span><span>Air Quality</span>
+                    </div>
+                    <button class="project-details-toggle" data-target="pinfo-nasfan"><i class="fas fa-chevron-down"></i> View details</button>
+                    <div class="project-info-panel" id="pinfo-nasfan">
+                        <p>Project Scope</p>
+                        <ul>
+                            <li>Supply and installation of high-capacity extraction fans</li>
+                            <li>Custom ductwork and ventilation system design</li>
+                            <li>Improved air quality and smoke extraction for airport facilities</li>
+                            <li>Energy-efficient operation with low noise output</li>
+                        </ul>
+                    </div>
+                    <a href="contact.html" class="btn">View Project</a>
+                </div>
+            </div>
+
+    <div class="project-card" data-category="water security">
+    <img src="../Pics/400cmTank.png" alt="400cm Steel Water Tank - NAS Airport">
+    <div class="project-body">
+        <span class="project-category-tag">Water Storage</span>
+        <h4>400cm Steel Water Tank</h4>
+        <p>Supply, fabrication and installation of a 400cm galvanized steel water tank at NAS Airport.</p>
+
+        <div class="client-location">
+            <i class="fas fa-user"></i> Kenya Airports Authority
+        </div>
+
+        <div class="client-location">
+            <i class="fas fa-map-pin"></i> NAS Airport
+        </div>
+
+        <div class="project-tags">
+            <span>Steel Tank</span>
+            <span>Water Storage</span>
+            <span>Installation</span>
+        </div>
+
+        <button class="project-details-toggle" data-target="pinfo-nas400">
+            <i class="fas fa-chevron-down"></i> View details
+        </button>
+
+        <div class="project-info-panel" id="pinfo-nas400">
+            <p><strong>Project Scope</strong></p>
+            <ul>
+                <li>Fabrication of a 400cm galvanized steel water tank.</li>
+                <li>Supply and on-site installation at NAS Airport.</li>
+                <li>Designed for reliable, high-capacity water storage.</li>
+                <li>Improved water availability and operational efficiency.</li>
+            </ul>
+        </div>
+
+        <a href="contact.html" class="btn">View Project</a>
+    </div>
+</div>
+
+               <div class="project-card" data-category="canopies">
+    <img src="../Pics/Polycarbonate canopy.png" alt="Polycarbonate Canopy - NAS Airport Service">
+    <div class="project-body">
+        <span class="project-category-tag">Canopies</span>
+        <h4>Polycarbonate Canopy</h4>
+        <p>Design, fabrication and installation of a durable polycarbonate canopy at NAS Airport Service.</p>
+
+        <div class="client-location">
+            <i class="fas fa-user"></i> Kenya Airports Authority
+        </div>
+
+        <div class="client-location">
+            <i class="fas fa-map-pin"></i> NAS Airport Service
+        </div>
+
+        <div class="project-tags">
+            <span>Canopy</span>
+            <span>Polycarbonate</span>
+            <span>Installation</span>
+        </div>
+
+        <button class="project-details-toggle" data-target="pinfo-polycanopy">
+            <i class="fas fa-chevron-down"></i> View details
+        </button>
+
+        <div class="project-info-panel" id="pinfo-polycanopy">
+            <p><strong>Project Scope</strong></p>
+            <ul>
+                <li>Design and fabrication of a high-quality polycarbonate canopy.</li>
+                <li>Supply and professional installation at NAS Airport Service.</li>
+                <li>Weather-resistant roofing providing shade and rain protection.</li>
+                <li>Enhanced aesthetics and functionality of the facility entrance.</li>
+            </ul>
+        </div>
+
+        <a href="contact.html" class="btn">View Project</a>
+    </div>
+</div>
+                
+
+                <!-- ====== PROJECT 2: Mavoko Water Tower (Water) ====== -->
+                <div class="project-card" data-category="water">
+                   <img src="../Pics/RaisedTank.png" alt="R">
+                    <div class="project-body">
+                        <span class="project-category-tag">Water</span>
+                        <h4>Mavoko Water Tower</h4>
+                        <p>250cm tank on 20m high tower for Mavowasco</p>
+                        <div class="client-location"><i class="fas fa-user"></i> Mavowasco</div>
+                        <div class="client-location"><i class="fas fa-map-pin"></i> Athi River</div>
+                        <div class="project-tags">
+                            <span>Water Tower</span><span>Steel Structure</span>
+                        </div>
+                        <button class="project-details-toggle" data-target="pinfo-mavoko"><i class="fas fa-chevron-down"></i> View details</button>
+                        <div class="project-info-panel" id="pinfo-mavoko">
+                            <p>Project Scope</p>
+                            <ul>
+                                <li>250cm water tank on 20m high tower</li>
+                                <li>Steel structure design and erection</li>
+                                <li>Client: Invegus Consultants</li>
+                            </ul>
+                        </div>
+                        <a href="contact.html" class="btn">View Project</a>
+                    </div>
+                </div>
+
+
+
+                <!-- ====== PROJECT 3: KEMSA Embakasi (Security) ====== -->
+                <div class="project-card" data-category="security">
+                    <img src="../Pics/embakasi.png" alt="RollerShutters">
+                    <div class="project-body">
+                        <span class="project-category-tag">Security</span>
+                        <h4>KEMSA Embakasi</h4>
+                        <p>Roller shutter doors for medical supplies storage facility</p>
+                        <div class="client-location"><i class="fas fa-user"></i> KEMSA</div>
+                        <div class="client-location"><i class="fas fa-map-pin"></i> Embakasi, Nairobi</div>
+                        <div class="project-tags">
+                            <span>Roller Shutters</span><span>Security</span>
+                        </div>
+                        <button class="project-details-toggle" data-target="pinfo-kemsa"><i class="fas fa-chevron-down"></i> View details</button>
+                        <div class="project-info-panel" id="pinfo-kemsa">
+                            <p>Project Scope</p>
+                            <ul>
+                                <li>Supply and installation of roller shutter doors</li>
+                                <li>Custom sizes for warehouse access</li>
+                                <li>Enhanced security for medical supplies</li>
+                            </ul>
+                        </div>
+                        <a href="contact.html" class="btn">View Project</a>
+                    </div>
+                </div>
+
+                <!-- ====== PROJECT 4: Kenchic Ltd (Industrial) ====== -->
+                <div class="project-card" data-category="industrial">
+                    <img src="../Pics/duct.png" alt="DuctWork">
+                    <div class="project-body">
+                        <span class="project-category-tag">Industrial</span>
+                        <h4>Kenchic Ltd</h4>
+                        <p>Advanced surveillance, duct work, industrial ventilation</p>
+                        <div class="client-location"><i class="fas fa-user"></i> Kenchic Ltd</div>
+                        <div class="client-location"><i class="fas fa-map-pin"></i> Various sites</div>
+                        <div class="project-tags">
+                            <span>CCTV</span><span>Ventilation</span><span>Duct Work</span>
+                        </div>
+                        <button class="project-details-toggle" data-target="pinfo-kenchic"><i class="fas fa-chevron-down"></i> View details</button>
+                        <div class="project-info-panel" id="pinfo-kenchic">
+                            <p>Project Scope</p>
+                            <ul>
+                                <li>Installation of advanced surveillance systems</li>
+                                <li>Industrial ventilation and duct work</li>
+                                <li>Enhanced security and operational efficiency</li>
+                            </ul>
+                        </div>
+                        <a href="contact.html" class="btn">View Project</a>
+                    </div>
+                </div>
+
+                
+
+                <!-- ====== PROJECT 6: Redeemed Gospel Church (Water) ====== -->
+                <div class="project-card" data-category="water">
+                    <img src="../Pics/towerholding.png" alt="">
+                    <div class="project-body">
+                        <span class="project-category-tag">Water</span>
+                        <h4>Redeemed Gospel Church</h4>
+                        <p>18m high tower holding 2 (24,000ltrs) plastic water tanks</p>
+                        <div class="client-location"><i class="fas fa-user"></i> Redeemed Gospel Church</div>
+                        <div class="client-location"><i class="fas fa-map-pin"></i> Huruma, Nairobi</div>
+                        <div class="project-tags">
+                            <span>Water Storage</span><span>Steel Tower</span>
+                        </div>
+                        <button class="project-details-toggle" data-target="pinfo-redeemed"><i class="fas fa-chevron-down"></i> View details</button>
+                        <div class="project-info-panel" id="pinfo-redeemed">
+                            <p>Project Scope</p>
+                            <ul>
+                                <li>18m high steel tower</li>
+                                <li>2 x 24,000ltrs plastic water tanks</li>
+                                <li>Full installation and plumbing</li>
+                            </ul>
+                        </div>
+                        <a href="contact.html" class="btn">View Project</a>
+                    </div>
+                </div>
+
+                <!-- ====== PROJECT 7: Transfleet Ltd (Water) ====== -->
+                <div class="project-card" data-category="water">
+                    <img src="../Pics/Nanyuki.png" alt="">
+                    <div class="project-body">
+                        <span class="project-category-tag">Water</span>
+                        <h4>Transfleet Ltd</h4>
+                        <p>36cm water tank on Nanyuki road</p>
+                        <div class="client-location"><i class="fas fa-user"></i> Transfleet Ltd</div>
+                        <div class="client-location"><i class="fas fa-map-pin"></i> Nanyuki Road</div>
+                        <div class="project-tags">
+                            <span>Water Tank</span><span>Transport</span>
+                        </div>
+                        <button class="project-details-toggle" data-target="pinfo-transfleet"><i class="fas fa-chevron-down"></i> View details</button>
+                        <div class="project-info-panel" id="pinfo-transfleet">
+                            <p>Project Scope</p>
+                            <ul>
+                                <li>36cm corrugated water tank</li>
+                                <li>Installation and piping</li>
+                                <li>Served transport depot water needs</li>
+                            </ul>
+                        </div>
+                        <a href="contact.html" class="btn">View Project</a>
+                    </div>
+                </div>
+
+                <!-- ====== PROJECT 8: Kinangop Dairy (Industrial) ====== -->
+                <div class="project-card" data-category="industrial">
+                    <img src="../Pics/kinangop.png" alt="">
+                    <div class="project-body">
+                        <span class="project-category-tag">Industrial</span>
+                        <h4>Kinangop Dairy Ltd</h4>
+                        <p>200cm water tank and dairy processing equipment</p>
+                        <div class="client-location"><i class="fas fa-user"></i> Kinangop Dairy Ltd</div>
+                        <div class="client-location"><i class="fas fa-map-pin"></i> Kinangop</div>
+                        <div class="project-tags">
+                            <span>Water Tank</span><span>Dairy Equipment</span>
+                        </div>
+                        <button class="project-details-toggle" data-target="pinfo-kinangop"><i class="fas fa-chevron-down"></i> View details</button>
+                        <div class="project-info-panel" id="pinfo-kinangop">
+                            <p>Project Scope</p>
+                            <ul>
+                                <li>200cm water tank for processing</li>
+                                <li>Dairy equipment support structures</li>
+                                <li>Improved water supply for production</li>
+                            </ul>
+                        </div>
+                        <a href="contact.html" class="btn">View Project</a>
+                    </div>
+                </div>
+
+                            <!-- ====== PROJECT 9: Temple Air Management Ltd (Industrial) ====== -->
+                <div class="project-card" data-category="industrial">
+                    <img class="project-img" src="../Pics/centrigal blower.png" alt="Centrifugal fan blower for Temple Air Management Ltd" />
+                    <div class="project-body">
+                        <span class="project-category-tag">Industrial</span>
+                        <h4>Temple Air Management Ltd</h4>
+                        <p>Centrifugal fan blower systems for industrial air management and ventilation.</p>
+                        <div class="client-location"><i class="fas fa-user"></i> Temple Air Management Ltd</div>
+                        <div class="client-location"><i class="fas fa-map-pin"></i> Nairobi, Kenya</div>
+                        <div class="project-tags">
+                            <span>Centrifugal Blower</span><span>Ventilation</span><span>Air Management</span>
+                        </div>
+                        <button class="project-details-toggle" data-target="pinfo-templeair"><i class="fas fa-chevron-down"></i> View details</button>
+                        <div class="project-info-panel" id="pinfo-templeair">
+                            <p>Project Scope</p>
+                            <ul>
+                                <li>Supply and installation of high-performance centrifugal fan blowers</li>
+                                <li>Custom ducting and air management solutions</li>
+                                <li>Heavy-duty construction for industrial environments</li>
+                                <li>Energy-efficient operation with reliable performance</li>
+                            </ul>
+                        </div>
+                        <a href="contact.html" class="btn">View Project</a>
+                    </div>
+                </div>
+
+             
+
+            </div> <!-- end project-grid -->
+        </div> <!-- end project-grid-wrapper -->
+    </section>
+
+    <!-- ===== PROJECT STATS ===== -->
+    <section class="container py-16" style="background: #f1f5f9; border-radius: 48px; margin-bottom: 2rem; padding: 2rem 0;">
+        <div class="container">
+            <h2 class="section-title text-center">Project Impact</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-top: 2rem;">
+                <div class="card text-center">
+                    <div style="font-size: 3rem; color: #00A651; font-weight: 800;">500+</div>
+                    <p style="color: #64748B;">Clients Served</p>
+                </div>
+                <div class="card text-center">
+                    <div style="font-size: 3rem; color: #00A651; font-weight: 800;">50+</div>
+                    <p style="color: #64748B;">Projects Completed</p>
+                </div>
+                <div class="card text-center">
+                    <div style="font-size: 3rem; color: #00A651; font-weight: 800;">15+</div>
+                    <p style="color: #64748B;">Industries Served</p>
+                </div>
+                <div class="card text-center">
+                    <div style="font-size: 3rem; color: #00A651; font-weight: 800;">98%</div>
+                    <p style="color: #64748B;">Client Satisfaction</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="container">
+        <div class="cta-section">
+            <h2 style="font-size: 2.8rem;">Have a Project in Mind?</h2>
+            <p style="font-size: 1.4rem; opacity: 0.9;">Let's bring your vision to life.</p>
+            <a href="contact.html" class="btn" style="background: white; color: #006C3B; margin-top: 1.5rem;">
+                <i class="fas fa-paper-plane"></i> Start Your Project
+            </a>
+        </div>
+    </section>
+
+  <!-- ===== FOOTER ===== -->
+<footer class="footer">
+    <div class="container footer-grid">
+        <!-- Column 1: Logo & About -->
+        <div class="footer-brand">
+            <div class="footer-logo-wrapper">
+                <img src="../Pics/Logo.png" alt="Ekson Afrique Logo" class="footer-logo" />
+                <div class="footer-logo-text">
+                    <span class="footer-brand-name">EKSON AFRIQUE</span>
+                    <span class="footer-tagline">YOUR PROCUREMENT PARTNER</span>
+                </div>
+            </div>
+            <p class="footer-description">Engineering Africa's future. We deliver innovative industrial solutions across Kenya and beyond.</p>
+           <div class="footer-social">
+                    <a href="https://www.linkedin.com/company/ekson-afrique/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://web.facebook.com/eksonafriqueltd/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+
+                    <a href="https://www.instagram.com/ekson_afrique/"  aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+
+                    <a href="https://twitter.com" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+
+                    <a href="https://www.youtube.com" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <a href="services.html">Services</a>
+            <a href="products.html">Products</a>
+            <a href="projects.html">Projects</a>
+            <a href="about.html">About Us</a>
+        </div>
+
+        <!-- Column 3: Support -->
+        <div class="footer-links">
+            <h4>Support</h4>
+            <a href="contact.html">Contact Us</a>
+            <a href="#">Careers</a>
+            <a href="#" id="privacyPolicyLink">Privacy Policy</a>
+            <a href="#">Newsletter</a>
+        </div>
+
+        <!-- Column 4: Contact Info -->
+        <div class="footer-contact">
+            <h4>Get In Touch</h4>
+            <div class="footer-contact-item">
+                <i class="fas fa-phone-alt"></i>
+                <span>+254 700 000 000</span>
+            </div>
+            <div class="footer-contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>info@eksonafrique.com</span>
+            </div>
+            <div class="footer-contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Nairobi, Kenya</span>
+            </div>
+            <div class="footer-contact-item">
+                <i class="fas fa-clock"></i>
+                <span>Mon-Fri: 8:00 AM - 5:00 PM</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <div class="container">
+            <p>&copy; 2026 Ekson Afrique Ltd. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+    <!-- ===== BACK TO TOP ===== -->
+    <button class="back-top" id="backTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- ============================================
+         EMBEDDED JAVASCRIPT (No external linking)
+         ============================================ -->
+    <script>
+        /* ============================================
+           Ekson Afrique - Projects Page JavaScript
+           ============================================ */
+
+        document.addEventListener('DOMContentLoaded', function() {
+
+            // ---------- Mobile Hamburger Menu ----------
+            const hamburger = document.getElementById('hamburger');
+            const navLinks = document.getElementById('navLinks');
+
+            if (hamburger && navLinks) {
+                hamburger.addEventListener('click', function() {
+                    navLinks.classList.toggle('open');
+                });
+
+                // Close menu when clicking outside
+                document.addEventListener('click', function(e) {
+                    if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
+                        navLinks.classList.remove('open');
+                    }
+                });
+
+                // Close menu when clicking a link
+                const links = navLinks.querySelectorAll('a');
+                links.forEach(function(link) {
+                    link.addEventListener('click', function() {
+                        navLinks.classList.remove('open');
+                    });
+                });
+            }
+
+            // ---------- Back to Top ----------
+            const backTop = document.getElementById('backTop');
+            if (backTop) {
+                backTop.addEventListener('click', function() {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+            }
+
+            // ---------- Dark Mode Toggle ----------
+            const darkToggle = document.getElementById('darkToggle');
+            if (darkToggle) {
+                darkToggle.addEventListener('click', function() {
+                    document.body.classList.toggle('dark');
+                    const icon = this.querySelector('i');
+                    if (document.body.classList.contains('dark')) {
+                        icon.className = 'fas fa-sun';
+                    } else {
+                        icon.className = 'fas fa-moon';
+                    }
+                });
+            }
+
+            // ---------- Active Navigation Link ----------
+            const currentPage = window.location.pathname.split('/').pop() || 'projects.html';
+            const navLinksAll = document.querySelectorAll('.nav-links a');
+            navLinksAll.forEach(function(link) {
+                const href = link.getAttribute('href');
+                if (href === currentPage || (currentPage === 'projects.html' && href === 'projects.html')) {
+                    link.classList.add('active');
+                }
+            });
+
+            // ---------- Close hamburger on window resize ----------
+            window.addEventListener('resize', function() {
+                if (window.innerWidth > 768) {
+                    navLinks.classList.remove('open');
+                }
+            });
+
+            // ---------- Project Card Click Animation ----------
+            const projectCards = document.querySelectorAll('.project-card');
+            projectCards.forEach(function(card) {
+                card.addEventListener('click', function(e) {
+                    // Don't trigger if clicking on a button or link
+                    if (e.target.closest('.btn') || e.target.closest('a')) return;
+                    
+                    // Add a subtle pulse animation
+                    this.style.transition = 'transform 0.2s, box-shadow 0.2s';
+                    this.style.transform = 'scale(0.98)';
+                    this.style.boxShadow = '0 4px 20px rgba(0,166,81,0.2)';
+                    
+                    setTimeout(() => {
+                        this.style.transform = 'scale(1)';
+                        this.style.boxShadow = 'none';
+                    }, 200);
+                });
+            });
+
+        });
+
+
+
+
+        (function() {
+            // ---------- CATEGORY FILTER ----------
+            const tabs = document.querySelectorAll('#projectCategoryTabs .category-tab');
+            const cards = document.querySelectorAll('#projectGrid .project-card');
+
+            function filterProjects(category) {
+                cards.forEach(card => {
+                    const cardCats = card.dataset.category ? card.dataset.category.split(' ') : [];
+                    if (category === 'all' || cardCats.includes(category)) {
+                        card.classList.remove('hidden');
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                });
+            }
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function(e) {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                    const cat = this.dataset.category;
+                    filterProjects(cat);
+                });
+            });
+
+            // ---------- DETAILS TOGGLE (v) ----------
+            const toggleButtons = document.querySelectorAll('.project-details-toggle');
+            toggleButtons.forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    const targetId = this.dataset.target;
+                    const panel = document.getElementById(targetId);
+                    if (!panel) return;
+
+                    // close other open panels
+                    document.querySelectorAll('.project-info-panel.open').forEach(p => {
+                        if (p.id !== targetId) {
+                            p.classList.remove('open');
+                            const otherBtn = document.querySelector(`.project-details-toggle[data-target="${p.id}"]`);
+                            if (otherBtn) {
+                                otherBtn.classList.remove('open');
+                                const icon = otherBtn.querySelector('i');
+                                const span = otherBtn.querySelector('span');
+                                if (icon) icon.className = 'fas fa-chevron-down';
+                                if (span) span.textContent = 'View details';
+                            }
+                        }
+                    });
+
+                    // toggle current
+                    const isOpen = panel.classList.contains('open');
+                    panel.classList.toggle('open');
+                    this.classList.toggle('open');
+
+                    const icon = this.querySelector('i');
+                    const span = this.querySelector('span');
+                    if (!isOpen) {
+                        if (icon) icon.className = 'fas fa-chevron-up';
+                        if (span) span.textContent = 'Hide details';
+                    } else {
+                        if (icon) icon.className = 'fas fa-chevron-down';
+                        if (span) span.textContent = 'View details';
+                    }
+                });
+            });
+
+            // ---------- (optional) card click subtle animation ----------
+            document.querySelectorAll('.project-card').forEach(card => {
+                card.addEventListener('click', function(e) {
+                    if (e.target.closest('.btn') || e.target.closest('.project-details-toggle')) return;
+                    this.style.transition = 'transform 0.15s, box-shadow 0.15s';
+                    this.style.transform = 'scale(0.98)';
+                    setTimeout(() => { this.style.transform = 'scale(1)'; }, 150);
+                });
+            });
+
+        })();
+    </script>
+    <script src="../JS/privacy-modal.js"></script>
+
+<div class="modal-overlay" id="privacyModal">
+    <div class="modal-container">
+        <div class="modal-header">
+            <h2>Privacy Policy</h2>
+            <button class="modal-close-btn" id="closeModalBtn" aria-label="Close modal">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="modal-content">
+                <p><strong>Last Updated:</strong> July 2026</p>
+                <h3>1. Information We Collect</h3>
+                <p>Ekson Afrique Ltd collects information you provide directly, such as when you contact us, request a quote, or sign up for our newsletter. This may include:</p>
+                <ul>
+                    <li>Name and contact information</li>
+                    <li>Company details</li>
+                    <li>Project requirements</li>
+                    <li>Communication preferences</li>
+                </ul>
+                <h3>2. How We Use Your Information</h3>
+                <p>We use the information we collect to:</p>
+                <ul>
+                    <li>Provide and improve our services</li>
+                    <li>Respond to inquiries and requests</li>
+                    <li>Send important updates and communications</li>
+                    <li>Comply with legal obligations</li>
+                </ul>
+                <h3>3. Information Sharing</h3>
+                <p>We do not sell, trade, or rent your personal information to third parties. We may share information with:</p>
+                <ul>
+                    <li>Service providers who assist with our operations</li>
+                    <li>Legal authorities when required by law</li>
+                    <li>Business partners with your consent</li>
+                </ul>
+                <h3>4. Data Security</h3>
+                <p>We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction.</p>
+                <h3>5. Your Rights</h3>
+                <p>You have the right to:</p>
+                <ul>
+                    <li>Access your personal data</li>
+                    <li>Request corrections to your data</li>
+                    <li>Request deletion of your data</li>
+                    <li>Opt-out of marketing communications</li>
+                </ul>
+                <h3>6. Cookies</h3>
+                <p>We use cookies to enhance your browsing experience. You can control cookie preferences through your browser settings.</p>
+                <h3>7. Changes to This Policy</h3>
+                <p>We may update this privacy policy from time to time. We will notify you of any significant changes by posting the new policy on this page.</p>
+                <h3>8. Contact Us</h3>
+                <p>If you have any questions about this Privacy Policy, please contact us:</p>
+                <ul>
+                    <li><strong>Email:</strong> info@eksonafrique.com</li>
+                    <li><strong>Phone:</strong> +254 700 000 000</li>
+                    <li><strong>Address:</strong> Nairobi, Kenya</li>
+                </ul>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="modal-close-btn-secondary" id="closeModalBtnSecondary">Close</button>
+        </div>
+    </div>
+</div>
+
+
+    </script>
+
+</body>
+</html>

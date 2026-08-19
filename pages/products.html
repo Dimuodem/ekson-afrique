@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Engineering Products – Ekson Afrique</title>
+    <meta name="description" content="Explore Ekson Afrique's industrial products including fans, water tanks, heat exchangers, and blowers." />
+    <meta property="og:title" content="Engineering Products – Ekson Afrique" />
+    <meta property="og:description" content="Industrial fans, steel water tanks, heat exchangers, and centrifugal blowers." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚙️</text></svg>" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/adjustments.css" />
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/modal.css">
+    <link rel="stylesheet" href="../css/privacy.css">
+
+    
+
+
+
+</head>
+
+
+
+
+
+<body>
+    <!-- ===== Navigation ===== -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container nav-flex">
+            <a href="index.html" class="logo">
+                <img src="../Pics/Logo.png" alt="">
+
+                <div class="logo-text">
+                    <span class="brand">EKSON AFRIQUE</span>
+                    <span class="tagline">YOUR PROCUREMENT PARTNER</span>
+                </div>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="../index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="products.html">Products</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+                <button class="dark-toggle" id="darkToggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
+            </div>
+            <div class="hamburger" id="hamburger" aria-label="Menu" role="button" tabindex="0">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+<!-- ===== Products Hero ===== -->
+<section class="products-hero">
+    <!-- Background decorations -->
+    <div class="bg-decoration">
+        <i class="fas fa-cogs"></i>
+    </div>
+    <div class="bg-decoration-secondary">
+        <i class="fas fa-tools"></i>
+    </div>
+    <div class="floating-dots">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    
+    <div class="container">
+        <div class="hero-grid">
+            <div>
+                <div class="breadcrumb">
+                    <span>Home</span>
+                    <i class="fas fa-chevron-right"></i>
+                    <span class="active">Products</span>
+                </div>
+                <h1>Engineering <span class="text-gradient">Products</span></h1>
+                <p>High-quality industrial equipment and solutions for your engineering needs.</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Products</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100+</span>
+                        <span class="stat-label">Clients Served</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">12+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#productGrid" class="btn">
+                        <i class="fas fa-arrow-down" style="margin-right: 8px;"></i> Browse Products
+                    </a>
+                    <a href="contact.html" class="btn btn-outline">
+                        <i class="fas fa-paper-plane" style="margin-right: 8px;"></i> Get a Quote
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image" aria-label="Products illustration">
+                <div class="image-grid">
+                    <div class="grid-item">
+                        <i class="fas fa-fan"></i>
+                    </div>
+                    <div class="grid-item">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <div class="grid-item">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="grid-item">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                </div>
+                <div class="floating-badge badge-1">
+                    <i class="fas fa-check-circle"></i> Quality Assured
+                </div>
+                <div class="floating-badge badge-2">
+                    <i class="fas fa-trophy"></i> Industry Leader
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+ <!-- ===== PRODUCTS SECTION (modified) ===== -->
+  <section class="container py-16">
+    <h2 class="section-title text-center">Our Products</h2>
+    <p class="text-center" style="color: #64748B; max-width: 600px; margin: 0 auto 1.2rem;">Explore our range of industrial, engineering, security and energy solutions.</p>
+
+    <!-- Category Filter Tabs -->
+    <div class="category-tabs" id="categoryTabs">
+      <button class="category-tab active" data-category="all">All</button>
+      <button class="category-tab" data-category="industrial">Industrial</button>
+      <button class="category-tab" data-category="engineering">Engineering</button>
+      <button class="category-tab" data-category="security">Security</button>
+      <button class="category-tab" data-category="energy">Energy</button>
+    </div>
+
+    <div class="product-grid-wrapper">
+      <div class="product-grid" id="productGrid">
+        <!-- ========== EXISTING PRODUCTS (updated with categories & toggle) ========== -->
+        <!-- 1. Industrial Fans -->
+        <div class="card product-card" data-category="industrial">
+          <img class="product-img" src="../Pics/industrial fan.png" alt="Industrial Fans" />
+          <span class="product-category-tag">Industrial</span>
+          <h4>Industrial Fans</h4>
+          <button class="product-details-toggle" data-target="info-fans"><i class="fas fa-chevron-down"></i> View details</button>
+          <div class="product-info-panel" id="info-fans">
+            <p>High pressure centrifugal fans</p>
+            <ul><li>High pressure centrifugal</li><li>Durable construction</li><li>Energy efficient</li></ul>
+          </div>
+          <a href="contact.html" class="btn">Request Quote</a>
+        </div>
+
+        <!-- 2. Steel Water Tanks -->
+        <div class="card product-card" data-category="industrial">
+          <img class="product-img" src="../Pics/tank.png" alt="Steel Water Tanks" />
+          <span class="product-category-tag">Industrial</span>
+          <h4>Steel Water Tanks</h4>
+          <button class="product-details-toggle" data-target="info-tanks"><i class="fas fa-chevron-down"></i> View details</button>
+          <div class="product-info-panel" id="info-tanks">
+            <p>Custom steel water tanks</p>
+            <ul><li>Custom sizes up to 400cm</li><li>Galvanized steel</li><li>Corrosion resistant</li></ul>
+          </div>
+          <a href="contact.html" class="btn">Request Quote</a>
+        </div>
+
+        <!-- 3. Heat Exchangers -->
+        <div class="card product-card" data-category="engineering">
+          <img class="product-img" src="../Pics/HeatExchanger.png" alt="Heat Exchanger" />
+          <span class="product-category-tag">Engineering</span>
+          <h4>Heat Exchangers</h4>
+          <button class="product-details-toggle" data-target="info-exchanger"><i class="fas fa-chevron-down"></i> View details</button>
+          <div class="product-info-panel" id="info-exchanger">
+            <p>Industrial cooling systems</p>
+            <ul><li>Efficient heat transfer</li><li>Durable materials</li><li>Custom configurations</li></ul>
+          </div>
+          <a href="contact.html" class="btn">Request Quote</a>
+        </div>
+
+        <!-- 4. Centrifugal Blowers -->
+        <div class="card product-card" data-category="industrial">
+          <img class="product-img" src="../Pics/industryFans.png" alt="Centrifugal Blowers" />
+          <span class="product-category-tag">Industrial</span>
+          <h4>Centrifugal Blowers</h4>
+          <button class="product-details-toggle" data-target="info-blower"><i class="fas fa-chevron-down"></i> View details</button>
+          <div class="product-info-panel" id="info-blower">
+            <p>High-performance blowers</p>
+            <ul><li>High air flow capacity</li><li>Heavy-duty construction</li><li>Reliable performance</li></ul>
+          </div>
+          <a href="contact.html" class="btn">Request Quote</a>
+        </div>
+
+        <!-- 5. Fuel Water Bowsers -->
+        <div class="card product-card" data-category="engineering">
+          <img class="product-img" src="../Pics/fuelwaterbrowser.png" alt="Fuel Water Bowsers" />
+          <span class="product-category-tag">Engineering</span>
+          <h4>Fuel Water Bowsers</h4>
+          <button class="product-details-toggle" data-target="info-bowser"><i class="fas fa-chevron-down"></i> View details</button>
+          <div class="product-info-panel" id="info-bowser">
+            <p>Mobile storage solutions</p>
+            <ul><li>Mobile storage</li><li>Durable construction</li><li>Custom capacities</li></ul>
+          </div>
+          <a href="contact.html" class="btn">Request Quote</a>
+        </div>
+
+        <!-- 6. Roller Shutters (security) -->
+        <div class="card product-card" data-category="security">
+          <img class="product-img" src="../Pics/storage door.png" alt="Roller Shutters" />
+          <span class="product-category-tag">Security</span>
+          <h4>Roller Shutters</h4>
+          <button class="product-details-toggle" data-target="info-shutter"><i class="fas fa-chevron-down"></i> View details</button>
+          <div class="product-info-panel" id="info-shutter">
+            <p>Security & access control</p>
+            <ul><li>Custom sizes</li><li>Secure design</li><li>Manual or motorized</li></ul>
+          </div>
+          <a href="contact.html" class="btn">Request Quote</a>
+        </div>
+
+        <!-- ========== NEW PRODUCTS (from your description) ========== -->
+
+        <!-- 7. Solar Panels (Energy) -->
+        <div class="card product-card" data-category="energy">
+          <img class="product-img" src="../Pics/solarpanels.png" alt="Solar Panels" />
+          <span class="product-category-tag">Energy</span>
+          <h4>Solar Panels</h4>
+          <button class="product-details-toggle" data-target="info-solar"><i class="fas fa-chevron-down"></i> View details</button>
+          <div class="product-info-panel" id="info-solar">
+            <p>Anti-reflective, high transparency glass</p>
+            <ul><li>Withstand 2400 Pa wind / 5400 Pa snow</li><li>IP65 junction box</li><li>High efficiency cells</li></ul>
+          </div>
+          <a href="contact.html" class="btn">Request Quote</a>
+        </div>
+
+        <!-- 8. Solar Water Heater (Energy) -->
+        <div class="card product-card" data-category="energy">
+          <img class="product-img" src="../Pics/SolarWaterHeater.png" alt="Solar Water Heater" />
+          <span class="product-category-tag">Energy</span>
+          <h4>Solar Water Heater</h4>
+          <button class="product-details-toggle" data-target="info-solarheater"><i class="fas fa-chevron-down"></i> View details</button>
+          <div class="product-info-panel" id="info-solarheater">
+            <p>MEGASUN solar heaters – excellent quality</p>
+            <ul><li>Capacities: 120, 160, 200, 300, 350 lt</li><li>Great performance</li><li>Eco-friendly</li></ul>
+          </div>
+          <a href="contact.html" class="btn">Request Quote</a>
+        </div>
+
+        <!-- 9. Milk & Vegetable Oil Tank (Industrial) -->
+        <div class="card product-card" data-category="industrial">
+          <img class="product-img" src="../Pics/bolier.png" alt="Milk & Vegetable Oil Tank" />
+          <span class="product-category-tag">Industrial</span>
+          <h4>Milk &amp; Vegetable Oil Tank</h4>
+          <button class="product-details-toggle" data-target="info-milktank"><i class="fas fa-chevron-down"></i> View details</button>
+          <div class="product-info-panel" id="info-milktank">
+            <p>Stainless steel storage tanks</p>
+            <ul><li>Food-grade material</li><li>Custom capacities</li><li>Easy cleaning</li></ul>
+          </div>
+          <a href="contact.html" class="btn">Request Quote</a>
+        </div>
+
+        <!-- 10. Tractor Drawn Garbage Skip Loader (Engineering) -->
+        <div class="card product-card" data-category="engineering">
+          <img class="product-img" src="../Pics/tractor drawn garbage skip loader.png" alt="Tractor Drawn Garbage Skip" />
+          <span class="product-category-tag">Engineering</span>
+          <h4>Tractor Drawn Skip Loader</h4>
+          <button class="product-details-toggle" data-target="info-skip"><i class="fas fa-chevron-down"></i> View details</button>
+          <div class="product-info-panel" id="info-skip">
+            <p>Heavy-duty garbage skip loader</p>
+            <ul><li>Chasis: RSC 203x76mm / 152x76mm</li><li>4 lifting rams, leaf spring</li><li>10.00 x 20 tyres, hydraulic brakes</li></ul>
+          </div>
+          <a href="contact.html" class="btn">Request Quote</a>
+        </div>
+
+        <!-- 11. Air Conditioning Units (Industrial) -->
+        <div class="card product-card" data-category="industrial">
+          <img class="product-img" src="../Pics/AirConditioning units.png" alt="Air Conditioning Units" />
+          <span class="product-category-tag">Industrial</span>
+          <h4>Air Conditioning Units</h4>
+          <button class="product-details-toggle" data-target="info-ac"><i class="fas fa-chevron-down"></i> View details</button>
+          <div class="product-info-panel" id="info-ac">
+            <p>Cools faster, lasts longer, runs quieter</p>
+            <ul><li>Energy efficient</li><li>Durable compressor</li><li>Quiet operation</li></ul>
+          </div>
+          <a href="contact.html" class="btn">Request Quote</a>
+        </div>
+
+
+        <!-- 13. General Branding & Supplies (Industrial) -->
+        <div class="card product-card" data-category="industrial">
+          <img class="product-img" src="../Pics/BrandingSolutions.png" alt="Branding & Supplies" />
+          <span class="product-category-tag">Industrial</span>
+          <h4>Branding &amp; Supplies</h4>
+          <button class="product-details-toggle" data-target="info-branding"><i class="fas fa-chevron-down"></i> View details</button>
+          <div class="product-info-panel" id="info-branding">
+            <p>Custom branding & supply chain</p>
+            <ul><li>Custom branding for businesses</li><li>Supply chain management</li><li>Procurement services</li></ul>
+          </div>
+          <a href="contact.html" class="btn">Request Quote</a>
+        </div>
+
+      </div> <!-- end product-grid -->
+    </div> <!-- end product-grid-wrapper -->
+  </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="container">
+        <div class="cta-section">
+            <h2 style="font-size: 2.8rem;">Need Industrial Equipment?</h2>
+            <p style="font-size: 1.4rem; opacity: 0.9;">We supply quality products for your engineering needs.</p>
+            <a href="contact.html" class="btn" style="background: white; color: #006C3B; margin-top: 1.5rem;">Request a Quote</a>
+        </div>
+    </section>
+
+     <!-- ===== FOOTER ===== -->
+<footer class="footer">
+    <div class="container footer-grid">
+        <!-- Column 1: Logo & About -->
+        <div class="footer-brand">
+            <div class="footer-logo-wrapper">
+                <img src="../Pics/Logo.png" alt="Ekson Afrique Logo" class="footer-logo" />
+                <div class="footer-logo-text">
+                    <span class="footer-brand-name">EKSON AFRIQUE</span>
+                    <span class="footer-tagline">YOUR PROCUREMENT PARTNER</span>
+                </div>
+            </div>
+            <p class="footer-description">Engineering Africa's future. We deliver innovative industrial solutions across Kenya and beyond.</p>
+           <div class="footer-social">
+                    <a href="https://www.linkedin.com/company/ekson-afrique/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://web.facebook.com/eksonafriqueltd/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+
+                    <a href="https://www.instagram.com/ekson_afrique/"  aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+
+                    <a href="https://twitter.com" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+
+                    <a href="https://www.youtube.com" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <a href="services.html">Services</a>
+            <a href="products.html">Products</a>
+            <a href="projects.html">Projects</a>
+            <a href="about.html">About Us</a>
+        </div>
+
+        <!-- Column 3: Support -->
+        <div class="footer-links">
+            <h4>Support</h4>
+            <a href="contact.html">Contact Us</a>
+            <a href="#">Careers</a>
+            <a href="#" id="privacyPolicyLink">Privacy Policy</a>
+            <a href="#">Newsletter</a>
+        </div>
+
+        <!-- Column 4: Contact Info -->
+        <div class="footer-contact">
+            <h4>Get In Touch</h4>
+            <div class="footer-contact-item">
+                <i class="fas fa-phone-alt"></i>
+                <span>+254 700 000 000</span>
+            </div>
+            <div class="footer-contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>info@eksonafrique.com</span>
+            </div>
+            <div class="footer-contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Nairobi, Kenya</span>
+            </div>
+            <div class="footer-contact-item">
+                <i class="fas fa-clock"></i>
+                <span>Mon-Fri: 8:00 AM - 5:00 PM</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <div class="container">
+            <p>&copy; 2026 Ekson Afrique Ltd. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+    <!-- ===== Back to Top ===== -->
+    <button class="back-top" id="backTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- ============================================
+         EMBEDDED JAVASCRIPT (No external linking)
+         ============================================ -->
+    <script>
+        /* ============================================
+           Ekson Afrique - Products Page JavaScript
+           ============================================ */
+
+        document.addEventListener('DOMContentLoaded', function() {
+
+            // ---------- Mobile Hamburger Menu ----------
+            const hamburger = document.getElementById('hamburger');
+            const navLinks = document.getElementById('navLinks');
+
+            if (hamburger && navLinks) {
+                hamburger.addEventListener('click', function() {
+                    navLinks.classList.toggle('open');
+                });
+
+                // Close menu when clicking outside
+                document.addEventListener('click', function(e) {
+                    if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
+                        navLinks.classList.remove('open');
+                    }
+                });
+
+                // Close menu when clicking a link
+                const links = navLinks.querySelectorAll('a');
+                links.forEach(function(link) {
+                    link.addEventListener('click', function() {
+                        navLinks.classList.remove('open');
+                    });
+                });
+            }
+
+            // ---------- Back to Top ----------
+            const backTop = document.getElementById('backTop');
+            if (backTop) {
+                backTop.addEventListener('click', function() {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+            }
+
+            // ---------- Dark Mode Toggle ----------
+            const darkToggle = document.getElementById('darkToggle');
+            if (darkToggle) {
+                darkToggle.addEventListener('click', function() {
+                    document.body.classList.toggle('dark');
+                    const icon = this.querySelector('i');
+                    if (document.body.classList.contains('dark')) {
+                        icon.className = 'fas fa-sun';
+                    } else {
+                        icon.className = 'fas fa-moon';
+                    }
+                });
+            }
+
+            // ---------- Active Navigation Link ----------
+            const currentPage = window.location.pathname.split('/').pop() || 'products.html';
+            const navLinksAll = document.querySelectorAll('.nav-links a');
+            navLinksAll.forEach(function(link) {
+                const href = link.getAttribute('href');
+                if (href === currentPage || (currentPage === 'products.html' && href === 'products.html')) {
+                    link.classList.add('active');
+                }
+            });
+
+            // ---------- Close hamburger on window resize ----------
+            window.addEventListener('resize', function() {
+                if (window.innerWidth > 768) {
+                    navLinks.classList.remove('open');
+                }
+            });
+
+            // ---------- Product Card Click Animation ----------
+            const productCards = document.querySelectorAll('.product-card');
+            productCards.forEach(function(card) {
+                card.addEventListener('click', function(e) {
+                    // Don't trigger if clicking on a button or link
+                    if (e.target.closest('.btn') || e.target.closest('a')) return;
+                    
+                    // Add a subtle pulse animation
+                    this.style.transition = 'transform 0.2s, box-shadow 0.2s';
+                    this.style.transform = 'scale(0.98)';
+                    this.style.boxShadow = '0 4px 20px rgba(0,166,81,0.15)';
+                    
+                    setTimeout(() => {
+                        this.style.transform = 'scale(1)';
+                        this.style.boxShadow = 'none';
+                    }, 200);
+                });
+            });
+
+        });
+
+
+
+         
+    (function() {
+      // ---------- CATEGORY FILTER ----------
+      const tabs = document.querySelectorAll('.category-tab');
+      const cards = document.querySelectorAll('.product-card');
+
+      function filterProducts(category) {
+        cards.forEach(card => {
+          const cardCat = card.dataset.category;
+          if (category === 'all' || cardCat === category) {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+      }
+
+      tabs.forEach(tab => {
+        tab.addEventListener('click', function(e) {
+          tabs.forEach(t => t.classList.remove('active'));
+          this.classList.add('active');
+          const cat = this.dataset.category;
+          filterProducts(cat);
+        });
+      });
+
+      // ---------- DETAILS TOGGLE (v) ----------
+      const toggleButtons = document.querySelectorAll('.product-details-toggle');
+      toggleButtons.forEach(btn => {
+        btn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          const targetId = this.dataset.target;
+          const panel = document.getElementById(targetId);
+          if (!panel) return;
+
+          // close other open panels (optional - cleaner)
+          document.querySelectorAll('.product-info-panel.open').forEach(p => {
+            if (p.id !== targetId) {
+              p.classList.remove('open');
+              const otherBtn = document.querySelector(`.product-details-toggle[data-target="${p.id}"]`);
+              if (otherBtn) {
+                otherBtn.classList.remove('open');
+                const icon = otherBtn.querySelector('i');
+                const span = otherBtn.querySelector('span');
+                if (icon) icon.className = 'fas fa-chevron-down';
+                if (span) span.textContent = 'View details';
+              }
+            }
+          });
+
+          // toggle current
+          const isOpen = panel.classList.contains('open');
+          panel.classList.toggle('open');
+          this.classList.toggle('open');
+
+          const icon = this.querySelector('i');
+          const span = this.querySelector('span');
+          if (!isOpen) {
+            if (icon) icon.className = 'fas fa-chevron-up';
+            if (span) span.textContent = 'Hide details';
+          } else {
+            if (icon) icon.className = 'fas fa-chevron-down';
+            if (span) span.textContent = 'View details';
+          }
+        });
+      });
+
+      // ---------- (optional) card click subtle animation ----------
+      document.querySelectorAll('.product-card').forEach(card => {
+        card.addEventListener('click', function(e) {
+          if (e.target.closest('.btn') || e.target.closest('.product-details-toggle')) return;
+          this.style.transition = 'transform 0.15s, box-shadow 0.15s';
+          this.style.transform = 'scale(0.98)';
+          setTimeout(() => { this.style.transform = 'scale(1)'; }, 150);
+        });
+      });
+
+    })();
+
+
+
+
+    </script>
+    <script src="../JS/privacy-modal.js"></script>
+
+<div class="modal-overlay" id="privacyModal">
+    <div class="modal-container">
+        <div class="modal-header">
+            <h2>Privacy Policy</h2>
+            <button class="modal-close-btn" id="closeModalBtn" aria-label="Close modal">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="modal-content">
+                <p><strong>Last Updated:</strong> July 2026</p>
+                
+                <h3>1. Information We Collect</h3>
+                <p>Ekson Afrique Ltd collects information you provide directly, such as when you contact us, request a quote, or sign up for our newsletter. This may include:</p>
+                <ul>
+                    <li>Name and contact information</li>
+                    <li>Company details</li>
+                    <li>Project requirements</li>
+                    <li>Communication preferences</li>
+                </ul>
+
+                <h3>2. How We Use Your Information</h3>
+                <p>We use the information we collect to:</p>
+                <ul>
+                    <li>Provide and improve our services</li>
+                    <li>Respond to inquiries and requests</li>
+                    <li>Send important updates and communications</li>
+                    <li>Comply with legal obligations</li>
+                </ul>
+
+                <h3>3. Information Sharing</h3>
+                <p>We do not sell, trade, or rent your personal information to third parties. We may share information with:</p>
+                <ul>
+                    <li>Service providers who assist with our operations</li>
+                    <li>Legal authorities when required by law</li>
+                    <li>Business partners with your consent</li>
+                </ul>
+
+                <h3>4. Data Security</h3>
+                <p>We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction.</p>
+
+                <h3>5. Your Rights</h3>
+                <p>You have the right to:</p>
+                <ul>
+                    <li>Access your personal data</li>
+                    <li>Request corrections to your data</li>
+                    <li>Request deletion of your data</li>
+                    <li>Opt-out of marketing communications</li>
+                </ul>
+
+                <h3>6. Cookies</h3>
+                <p>We use cookies to enhance your browsing experience. You can control cookie preferences through your browser settings.</p>
+
+                <h3>7. Changes to This Policy</h3>
+                <p>We may update this privacy policy from time to time. We will notify you of any significant changes by posting the new policy on this page.</p>
+
+                <h3>8. Contact Us</h3>
+                <p>If you have any questions about this Privacy Policy, please contact us:</p>
+                <ul>
+                    <li><strong>Email:</strong> info@eksonafrique.com</li>
+                    <li><strong>Phone:</strong> +254 700 000 000</li>
+                    <li><strong>Address:</strong> Nairobi, Kenya</li>
+                </ul>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="modal-close-btn-secondary" id="closeModalBtnSecondary">Close</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

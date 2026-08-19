@@ -1,0 +1,325 @@
+/* ==========================================
+   EKSON AFRIQUE SUCCESS MODAL
+==========================================*/
+
+.modal-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:rgba(0,0,0,.65);
+
+    backdrop-filter:blur(10px);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.45s ease;
+
+    z-index:9999;
+
+}
+
+.modal-overlay.active{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+.success-modal{
+
+    width:min(92%,560px);
+
+    background:rgba(255,255,255,.95);
+
+    backdrop-filter:blur(18px);
+
+    border-radius:32px;
+
+    padding:45px;
+
+    text-align:center;
+
+    box-shadow:
+
+    0 30px 70px rgba(0,0,0,.20);
+
+    transform:translateY(40px) scale(.95);
+
+    transition:.45s ease;
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+.modal-overlay.active .success-modal{
+
+    transform:translateY(0) scale(1);
+
+}
+
+.success-modal::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    right:0;
+
+    height:8px;
+
+    background:linear-gradient(
+        90deg,
+        #006C3B,
+        #00A651
+    );
+
+}
+
+.success-logo{
+
+    display:block;
+
+    width:80px;
+
+    height:80px;
+
+    margin:0 auto 20px;
+
+    object-fit:contain;
+
+}
+
+.success-icon{
+
+    width:95px;
+
+    height:95px;
+
+    border-radius:50%;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#EAF8F1;
+
+    color:#00A651;
+
+    font-size:42px;
+
+    animation:pop .55s ease;
+
+}
+
+@keyframes pop{
+
+0%{
+
+transform:scale(.2);
+
+opacity:0;
+
+}
+
+70%{
+
+transform:scale(1.15);
+
+}
+
+100%{
+
+transform:scale(1);
+
+opacity:1;
+
+}
+
+}
+
+.success-title{
+
+    margin-top:22px;
+
+    color:#006C3B;
+
+    font-size:2rem;
+
+    font-weight:700;
+
+}
+
+.success-message{
+
+    margin-top:15px;
+
+    line-height:1.8;
+
+    color:#64748B;
+
+    font-size:1rem;
+
+}
+
+.reference-card{
+
+    margin:35px 0;
+
+    background:#F6FFFA;
+
+    border:2px dashed #00A651;
+
+    border-radius:22px;
+
+    padding:25px;
+
+}
+
+.reference-label{
+
+    color:#64748B;
+
+    font-size:.95rem;
+
+    margin-bottom:10px;
+
+}
+
+.reference-value{
+
+    font-size:1.55rem;
+
+    font-weight:700;
+
+    color:#006C3B;
+
+}
+
+.customer-email{
+
+    margin-top:20px;
+
+    color:#64748B;
+
+    line-height:1.8;
+
+}
+
+.modal-divider{
+
+    width:100%;
+
+    height:1px;
+
+    background:#E2E8F0;
+
+    margin:30px 0;
+
+}
+
+.modal-footer{
+
+    color:#64748B;
+
+    line-height:2;
+
+}
+
+.modal-footer strong{
+
+    color:#006C3B;
+
+}
+
+.close-modal{
+
+    margin-top:35px;
+
+    background:#00A651;
+
+    color:white;
+
+    border:none;
+
+    border-radius:50px;
+
+    padding:15px 45px;
+
+    cursor:pointer;
+
+    font-size:1rem;
+
+    transition:.3s;
+
+}
+
+.close-modal:hover{
+
+    background:#006C3B;
+
+    transform:translateY(-2px);
+
+}
+
+/* =====================================
+   PRIVACY MODAL
+===================================== */
+
+.privacy-modal{
+
+    max-width:720px;
+
+    text-align:left;
+
+}
+
+.privacy-content{
+
+    margin-top:25px;
+
+    max-height:60vh;
+
+    overflow-y:auto;
+
+    padding-right:10px;
+
+}
+
+.privacy-content h3{
+
+    color:#006C3B;
+
+    margin:25px 0 10px;
+
+}
+
+.privacy-content p{
+
+    color:#64748B;
+
+    line-height:1.8;
+
+    margin-bottom:10px;
+
+}
