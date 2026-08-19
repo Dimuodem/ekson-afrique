@@ -18,7 +18,7 @@ if (contactForm) {
         // Disable submit button
         submitButton.disabled = true;
         submitButton.innerHTML =
-            '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            '<i class="fas fa-spinner fa-spfin"></i> Sending...';
 
         // Collect form data
         const data = {
@@ -81,11 +81,10 @@ if (contactForm) {
 
         } catch (error) {
 
-            console.error("Submission Error:", error);
+            console.error("Submission Error:", error);console.error("Submission Error:", error);
+            alert("DEBUG ERROR: " + error.message);
 
-            alert(
-                "Unable to submit your inquiry.\n\nPlease check your internet connection and try again."
-            );
+            
 
         } finally {
 
