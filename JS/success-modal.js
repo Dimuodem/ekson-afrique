@@ -7,14 +7,14 @@ const referenceNumber = document.getElementById("referenceNumber");
 const customerEmail = document.getElementById("customerEmail");
 const closeModalButton = document.getElementById("closeModal");
 
-function showSuccessModal(reference, email) {
+function showSuccessModal(reference, email, statusText = 'Confirmation email sent to') {
 
     if (!successModal) return;
 
     referenceNumber.textContent = reference;
 
     customerEmail.innerHTML = `
-        <strong>Confirmation email sent to</strong><br>
+        <strong>${statusText}</strong><br>
         ${email}
         <br><br>
         <span style="color:#00A651;">

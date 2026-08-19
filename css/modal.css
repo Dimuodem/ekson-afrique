@@ -54,11 +54,14 @@
 
     0 30px 70px rgba(0,0,0,.20);
 
+
     transform:translateY(40px) scale(.95);
 
     transition:.45s ease;
 
-    overflow:hidden;
+    /* prevent modal from growing beyond viewport on small screens */
+    max-height:85vh;
+    overflow:auto;
 
     position:relative;
 
@@ -103,7 +106,6 @@
     margin:0 auto 20px;
 
     object-fit:contain;
-
 }
 
 .success-icon{
@@ -280,6 +282,21 @@ opacity:1;
 
     transform:translateY(-2px);
 
+}
+
+/* Responsive tweaks for success modal on small screens */
+@media (max-width:600px){
+    .success-modal{
+        width:calc(100% - 32px);
+        padding:24px;
+        border-radius:20px;
+    }
+    .success-title{
+        font-size:1.6rem;
+    }
+    .reference-value{
+        font-size:1.25rem;
+    }
 }
 
 /* =====================================
