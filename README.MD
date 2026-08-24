@@ -229,7 +229,7 @@ Nairobi.
 
 📧 Email: info@eksonafrique.com
 
-📞 Phone: +254 700 123456
+📞 Phone: 0715822288
 
 🌐 Website: eksonafrique.com
 
