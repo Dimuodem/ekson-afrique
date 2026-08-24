@@ -201,6 +201,15 @@ body.dark .contact-hero .bg-decoration-secondary {
 .contact-hero .container {
     position: relative;
     z-index: 1;
+    padding-left: clamp(1.25rem, 2vw, 2.5rem);
+    padding-right: clamp(1.25rem, 2vw, 2.5rem);
+}
+
+.projects-hero .container {
+    position: relative;
+    z-index: 1;
+    padding-left: clamp(1.25rem, 2vw, 2.5rem);
+    padding-right: clamp(1.25rem, 2vw, 2.5rem);
 }
 
 .contact-hero .hero-grid {

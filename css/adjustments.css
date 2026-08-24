@@ -123,6 +123,15 @@ body.dark .services-hero .bg-decoration {
 .services-hero .container {
     position: relative;
     z-index: 1;
+    padding-left: clamp(1.25rem, 2vw, 2.5rem);
+    padding-right: clamp(1.25rem, 2vw, 2.5rem);
+}
+
+.products-hero .container {
+    position: relative;
+    z-index: 1;
+    padding-left: clamp(1.25rem, 2vw, 2.5rem);
+    padding-right: clamp(1.25rem, 2vw, 2.5rem);
 }
 
 .services-hero .hero-grid {
