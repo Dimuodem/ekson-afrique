@@ -26,6 +26,30 @@
 
 
 
+
+    <!-- Product video cards -->
+    <style>
+      .product-video {
+        width: 100%;
+        height: 220px;
+        display: block;
+        object-fit: cover;
+        background: #0f172a;
+        border-radius: 12px;
+      }
+
+      .product-video:focus {
+        outline: 3px solid rgba(0, 166, 81, 0.35);
+        outline-offset: 2px;
+      }
+
+      @media (max-width: 768px) {
+        .product-video {
+          height: 200px;
+        }
+      }
+    </style>
+
 </head>
 
 
@@ -317,6 +341,121 @@
           <a href="contact.html" class="btn">Request Quote</a>
         </div>
 
+
+        <!-- ========== CONVEYOR & PROCESSING SYSTEMS IN ACTION ========== -->
+
+        <!-- 14. Cleated Incline Conveyor -->
+        <div class="card product-card" data-category="industrial">
+          <video
+            class="product-img product-video"
+            controls
+            preload="none"
+            poster="../Pics/blue.jpg"
+            playsinline
+            aria-label="Cleated Incline Conveyor demonstration">
+            <source src="../videos/blueconveyor.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <span class="product-category-tag">Industrial</span>
+          <h4>Cleated Incline Conveyor</h4>
+          <button class="product-details-toggle" data-target="info-blueconveyor">
+            <i class="fas fa-chevron-down"></i> <span>View details</span>
+          </button>
+          <div class="product-info-panel" id="info-blueconveyor">
+            <p>Efficient vertical transfer of bulk materials between processing stages.</p>
+            <ul>
+              <li>Inclined material transfer</li>
+              <li>Cleated belt helps reduce material rollback</li>
+              <li>Suitable for industrial processing lines</li>
+            </ul>
+          </div>
+          <a href="contact.html" class="btn">Request Quote</a>
+        </div>
+
+        <!-- 15. Sorting & Transfer Conveyor -->
+        <div class="card product-card" data-category="industrial">
+          <video
+            class="product-img product-video"
+            controls
+            preload="none"
+            poster="../Pics/conveyor.png"
+            playsinline
+            aria-label="Sorting and Transfer Conveyor demonstration">
+            <source src="../videos/conveyorbelt.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <span class="product-category-tag">Industrial</span>
+          <h4>Sorting &amp; Transfer Conveyor</h4>
+          <button class="product-details-toggle" data-target="info-conveyorbelt">
+            <i class="fas fa-chevron-down"></i> <span>View details</span>
+          </button>
+          <div class="product-info-panel" id="info-conveyorbelt">
+            <p>Continuous product movement for efficient sorting, inspection and processing.</p>
+            <ul>
+              <li>Steady product flow</li>
+              <li>Supports sorting and inspection operations</li>
+              <li>Integrates with production lines</li>
+            </ul>
+          </div>
+          <a href="contact.html" class="btn">Request Quote</a>
+        </div>
+
+        <!-- 16. Industrial Material Handling System -->
+        <div class="card product-card" data-category="industrial">
+          <video
+            class="product-img product-video"
+            controls
+            preload="none"
+            poster="../Pics/green.png"
+            playsinline
+            aria-label="Industrial Material Handling System demonstration">
+            <source src="../videos/greenconveyor.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <span class="product-category-tag">Industrial</span>
+          <h4>Industrial Material Handling System</h4>
+          <button class="product-details-toggle" data-target="info-greenconveyor">
+            <i class="fas fa-chevron-down"></i> <span>View details</span>
+          </button>
+          <div class="product-info-panel" id="info-greenconveyor">
+            <p>Integrated conveyors for smooth movement of materials throughout the production line.</p>
+            <ul>
+              <li>Horizontal and inclined transfer sections</li>
+              <li>Efficient movement between processing stages</li>
+              <li>Designed for continuous industrial operation</li>
+            </ul>
+          </div>
+          <a href="contact.html" class="btn">Request Quote</a>
+        </div>
+
+        <!-- 17. Integrated Processing Line -->
+        <div class="card product-card" data-category="industrial">
+          <video
+            class="product-img product-video"
+            controls
+            preload="none"
+            poster="../Pics/insidde.png"
+            playsinline
+            aria-label="Integrated Processing Line demonstration">
+            <source src="../videos/industryinside.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <span class="product-category-tag">Industrial</span>
+          <h4>Integrated Processing Line</h4>
+          <button class="product-details-toggle" data-target="info-industryinside">
+            <i class="fas fa-chevron-down"></i> <span>View details</span>
+          </button>
+          <div class="product-info-panel" id="info-industryinside">
+            <p>A complete industrial setup combining material handling, processing equipment and controls.</p>
+            <ul>
+              <li>Integrated production workflow</li>
+              <li>Conveyor-based material handling</li>
+              <li>Suitable for complete processing installations</li>
+            </ul>
+          </div>
+          <a href="contact.html" class="btn">Request Quote</a>
+        </div>
+
       </div> <!-- end product-grid -->
     </div> <!-- end product-grid-wrapper -->
   </section>
@@ -485,7 +624,7 @@
             productCards.forEach(function(card) {
                 card.addEventListener('click', function(e) {
                     // Don't trigger if clicking on a button or link
-                    if (e.target.closest('.btn') || e.target.closest('a')) return;
+                    if (e.target.closest('.btn') || e.target.closest('a') || e.target.closest('video')) return;
                     
                     // Add a subtle pulse animation
                     this.style.transition = 'transform 0.2s, box-shadow 0.2s';
@@ -515,6 +654,8 @@
           if (category === 'all' || cardCat === category) {
             card.classList.remove('hidden');
           } else {
+            const video = card.querySelector('video');
+            if (video && !video.paused) video.pause();
             card.classList.add('hidden');
           }
         });
@@ -570,10 +711,24 @@
         });
       });
 
+
+      // ---------- PRODUCT VIDEOS ----------
+      // Keep bandwidth/CPU use lower by allowing only one product video to play at a time.
+      const productVideos = document.querySelectorAll('.product-video');
+      productVideos.forEach(video => {
+        video.addEventListener('play', function() {
+          productVideos.forEach(otherVideo => {
+            if (otherVideo !== this && !otherVideo.paused) {
+              otherVideo.pause();
+            }
+          });
+        });
+      });
+
       // ---------- (optional) card click subtle animation ----------
       document.querySelectorAll('.product-card').forEach(card => {
         card.addEventListener('click', function(e) {
-          if (e.target.closest('.btn') || e.target.closest('.product-details-toggle')) return;
+          if (e.target.closest('.btn') || e.target.closest('.product-details-toggle') || e.target.closest('video')) return;
           this.style.transition = 'transform 0.15s, box-shadow 0.15s';
           this.style.transform = 'scale(0.98)';
           setTimeout(() => { this.style.transform = 'scale(1)'; }, 150);
