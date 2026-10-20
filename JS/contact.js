@@ -2,156 +2,141 @@
    Ekson Afrique - Contact Form
    ============================================ */
 
-const API_URL = "https://script.google.com/macros/s/AKfycbx7WBXklTePPLolgzlqBHUaHFlg8l66lD54Tnslj1FWsbRuyGaFWD2bh3eJFML9LbxogQ/exec";
-
-/* Optional EmailJS client-side fallback
-   To enable: set EMAILJS_ENABLED = true and provide your EmailJS service/template/public keys.
-   Get keys from https://www.emailjs.com/ (or use another email provider of your choice).
-*/
-const EMAILJS_ENABLED = false; // set to true after configuration
-const EMAILJS_SERVICE_ID = "your_service_id";
-const EMAILJS_TEMPLATE_ID = "your_template_id";
-const EMAILJS_PUBLIC_KEY = "your_public_key"; // also called user_id in some docs
-const COMPANY_EMAIL = "info@eksonafrique.com";
-
-async function sendEmailJSConfirmation({ fullName, email, reference }) {
-    if (!EMAILJS_ENABLED) return { ok: false, error: 'disabled' };
-
-    const payload = {
-        service_id: EMAILJS_SERVICE_ID,
-        template_id: EMAILJS_TEMPLATE_ID,
-        user_id: EMAILJS_PUBLIC_KEY,
-        template_params: {
-            to_email: email,
-            to_name: fullName,
-            reference: reference,
-            company_email: COMPANY_EMAIL
-        }
-    };
-
-    try {
-        const res = await fetch("https://api.emailjs.com/api/v1.0/email/send", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(payload)
-        });
-
-        if (res.ok) return { ok: true };
-        const text = await res.text();
-        return { ok: false, error: text };
-
-    } catch (err) {
-        return { ok: false, error: err.message };
-    }
-
-}
+const API_URL =
+  "https://script.google.com/macros/s/AKfycby2aNN0m9EyOLuqXtr1UoRfAIh3upG1kVatwhCEKRQDLnBTG1WdcPZoa7e7MRzjI0Dc/exec";
 
 const contactForm = document.getElementById("contactForm");
 
+function createReference() {
+  const now = new Date();
+
+  const year = now.getFullYear();
+  const month = String(now.getMonth() + 1).padStart(2, "0");
+  const day = String(now.getDate()).padStart(2, "0");
+
+  const random = Math.floor(100000 + Math.random() * 900000);
+
+  return `EKA-${year}${month}${day}-${random}`;
+}
+
+
 if (contactForm) {
 
-    contactForm.addEventListener("submit", async function (e) {
+  contactForm.addEventListener("submit", async function (event) {
 
-        e.preventDefault();
+    event.preventDefault();
 
-        const submitButton = contactForm.querySelector("button[type='submit']");
-        const originalButtonHTML = submitButton.innerHTML;
+    const submitButton =
+      contactForm.querySelector("button[type='submit']");
 
-        // Disable submit button
-        submitButton.disabled = true;
-        submitButton.innerHTML =
-            '<i class="fas fa-spinner fa-spfin"></i> Sending...';
+    const originalButtonHTML =
+      submitButton.innerHTML;
 
-        // Collect form data
-        const data = {
-            fullName: contactForm.querySelector("[name='fullName']").value.trim(),
-            email: contactForm.querySelector("[name='email']").value.trim(),
-            phone: contactForm.querySelector("[name='phone']").value.trim(),
-            service: contactForm.querySelector("[name='service']").value,
-            message: contactForm.querySelector("[name='message']").value.trim()
-        };
+    const fullName =
+      contactForm.querySelector("[name='fullName']").value.trim();
 
-        // Client-side validation
-        if (!data.fullName || !data.email || !data.message) {
+    const email =
+      contactForm.querySelector("[name='email']").value.trim();
 
-            alert("Please fill in all required fields.");
+    const phone =
+      contactForm.querySelector("[name='phone']").value.trim();
 
-            submitButton.disabled = false;
-            submitButton.innerHTML = originalButtonHTML;
+    const service =
+      contactForm.querySelector("[name='service']").value;
 
-            return;
+    const message =
+      contactForm.querySelector("[name='message']").value.trim();
 
-        }
 
-        try {
+    // Basic validation
+    if (!fullName || !email || !message) {
 
-            const response = await fetch(API_URL, {
-                method: "POST",
-                body: JSON.stringify(data)
-            });
+      alert(
+        "Please enter your name, email address and message."
+      );
 
-            const result = await response.json();
+      return;
+    }
 
-            console.log("Server Response:", result);
 
-            if (result.success) {
+    const reference = createReference();
 
-                // Reset form
-                contactForm.reset();
 
-                // Try to send a confirmation email client-side (optional)
-                let emailStatus = { ok: false, error: 'not-sent' };
+    const formData = new URLSearchParams();
 
-                if (EMAILJS_ENABLED) {
-                    emailStatus = await sendEmailJSConfirmation({
-                        fullName: data.fullName,
-                        email: data.email,
-                        reference: result.reference
-                    });
-                }
+    formData.append("fullName", fullName);
+    formData.append("email", email);
+    formData.append("phone", phone);
+    formData.append("service", service);
+    formData.append("message", message);
+    formData.append("reference", reference);
 
-                // Display success modal (loaded from success-modal.js)
-                if (typeof showSuccessModal === "function") {
+    formData.append(
+      "source",
+      window.location.href
+    );
 
-                    const statusText = emailStatus.ok ? 'Confirmation email sent to' : 'Confirmation email queued for';
 
-                    showSuccessModal(
-                        result.reference,
-                        data.email,
-                        statusText
-                    );
+    submitButton.disabled = true;
 
-                } else {
+    submitButton.innerHTML =
+      '<i class="fas fa-spinner fa-spin"></i> Sending...';
 
-                    alert(
-                        `Thank you!\n\nReference Number:\n${result.reference}`
-                    );
 
-                }
+    try {
 
-            } else {
+      await fetch(API_URL, {
 
-                alert(result.message || "Something went wrong while submitting your inquiry.");
+        method: "POST",
 
-            }
+        mode: "no-cors",
 
-        } catch (error) {
+        body: formData
 
-            console.error("Submission Error:", error);console.error("Submission Error:", error);
-            alert("DEBUG ERROR: " + error.message);
+      });
 
-            
 
-        } finally {
+      contactForm.reset();
 
-            // Restore button
-            submitButton.disabled = false;
-            submitButton.innerHTML = originalButtonHTML;
 
-        }
+      // Use your existing success modal
+      if (typeof showSuccessModal === "function") {
 
-    });
+        showSuccessModal(
+          reference,
+          email,
+          "Inquiry received from"
+        );
+
+      } else {
+
+        alert(
+          `Thank you for contacting Ekson Afrique!\n\nReference Number: ${reference}`
+        );
+
+      }
+
+
+    } catch (error) {
+
+      console.error(
+        "Submission Error:",
+        error
+      );
+
+      alert(
+        "We couldn't send your message. Please try again."
+      );
+
+    } finally {
+
+      submitButton.disabled = false;
+
+      submitButton.innerHTML =
+        originalButtonHTML;
+
+    }
+
+  });
 
 }
